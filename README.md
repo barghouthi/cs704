@@ -47,10 +47,24 @@ polymorphic lambda calculus / sytemf
 -->
 
 #### Week 6 (Feb 26)
+<!--
+operational semantics
+axiomatic semantics / hoare logic
+-->
 
 #### Week 7 (Mar 5)
+<!--
+propositional logic and DPLL
+first-order logic and SMT solvers
+-->
 
 #### Week 8 (Mar 12)
+<!--
+programs as transition systems / invariants
+encoding transition systems in logic
+...maybe Horn clauses
+...man examples of encodings
+-->
 
 #### Week 9 (Mar 19)
 
@@ -63,7 +77,7 @@ polymorphic lambda calculus / sytemf
 #### Week 13 (Apr 16)
 
 #### Week 14 (Apr 23)
-
+Class presentations will be held this week.
 #### Week 15 (Apr 30)
 Class presentations will be held this week.
 
