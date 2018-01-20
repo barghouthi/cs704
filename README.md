@@ -4,7 +4,7 @@
 |-|-|
 |When | Tu/Th 230-345 |
 |Where | CS 1325 |
-|Who | [Aws Albarghouthi](cs.wisc.edu/~aws) |
+|Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
 |Office hours | Tu 345-445 (after class) |
 
 ## Course description
