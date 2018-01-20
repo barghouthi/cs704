@@ -37,8 +37,8 @@ Performance will be evaluated as follows:
 
 | Task | X% |
 | - | - |
-| Assignments (5) | 40%|
 | Research project | 45% |
+| Assignments (5) | 40%|
 | Project presentation | 10% |
 | Class participation | 5% |
 
