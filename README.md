@@ -2,12 +2,12 @@
 ## Spring 2018
 
 
-| X | Y |
+| Q | A |
 |-|-|
-|When: | Tu/Th 230-345 |
-|Where: | CS 1325 |
-|Who: | [Aws Albarghouthi](cs.wisc.edu/~aws) |
-|Office hours: | Tu 345-445 (after class) |
+|When | Tu/Th 230-345 |
+|Where | CS 1325 |
+|Who | [Aws Albarghouthi](cs.wisc.edu/~aws) |
+|Office hours | Tu 345-445 (after class) |
 
 ## Course description
 This course covers a range of topics in programming languages, including lambda calculus and type theory, functional programming, logics for encoding programs, and automated verification techniques.
@@ -41,6 +41,7 @@ Performance will be evaluated as follows:
 | Assignments (5) | 40%|
 | Research project | 50% |
 | Project presentation | 10% |
+
 
 ## Course Project
 For the final project, you can work on a problem of your choice with a partner or by yourself.
