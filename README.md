@@ -13,16 +13,22 @@ This course covers a range of topics in programming languages, including lambda 
 The goal is to expose students to a range of mathematical and practical tools for reasoning about programs.
 
 ## Lectures
-#### Week 1
-#### Week 2
-#### Week 3
-#### Week 4
-#### Week 5
-#### Week 6
-#### Week 7
-#### Week 8
-#### Week 9
-#### Week 10
+#### Week 1 (Jan 22)
+#### Week 2 (Jan 29)
+#### Week 3 (Feb 5)
+#### Week 4 (Feb 12)
+#### Week 5 (Feb 19)
+#### Week 6 (Feb 26)
+#### Week 7 (Mar 5)
+#### Week 8 (Mar 12)
+#### Week 9 (Mar 19)
+#### Week 10 (Mar 26)
+#### Week 11 (Apr 2)
+#### Week 12 (Apr 9)
+#### Week 13 (Apr 16)
+#### Week 14 (Apr 23)
+#### Week 15 (Apr 30)
+Class presentations will be held this week.
 
 
 ## Assignments
