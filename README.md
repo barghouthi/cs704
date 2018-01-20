@@ -1,5 +1,5 @@
-# CS 704: Principles of Programming Languages
-## Spring 2018
+# CS 704: Principles of Programming Languages (Spring 2018)
+
 
 
 | Q | A |
@@ -29,6 +29,7 @@ The goal is to expose students to a range of mathematical and practical tools fo
 
 ## Assignments
 Assignments will be posted here:
+
 | Assignment | Due date |
 | - | - |
 |   |   |
