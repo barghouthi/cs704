@@ -5,7 +5,7 @@
 |When | Tu/Th 230-345 |
 |Where | CS 1325 |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
-|Office hours | Tu 345-445 (after class) |
+|Office hours | Tu 345-445 in CS 6363 |
 
 ## Course description
 This course covers a range of topics in programming languages, including lambda calculus and type theory, functional programming, logics for encoding programs, and automated verification techniques.
