@@ -50,9 +50,9 @@ For the final project, you can work on a problem of your choice with a partner o
 * **Deliverable 2 (TBA)**  Submit a 2-3 page proposal including the following:
 The statement of the problem to be investigated
 An explanation of why the problem is interesting
-A description of what you propose to do,
-Explain the elements that you will have to build
-Explain the elements that you can pick up from open-source sites
+A description of what you propose to do.
+Explain the elements that you will have to build.
+Explain the elements that you can pick up from open-source sites.
 Explain the experiment(s) or performance measurement(s) that you plan to carry out. Two good approaches are
 State the hypothesis that you hope to refute.
 Complete the following sentence: ``The experiments were designed to shed light on the following questions: . . .''
