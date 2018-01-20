@@ -1,7 +1,5 @@
 # CS 704: Principles of Programming Languages (Spring 2018)
 
-
-
 | Q | A |
 |-|-|
 |When | Tu/Th 230-345 |
@@ -47,9 +45,9 @@ Performance will be evaluated as follows:
 ## Course Project
 For the final project, you can work on a problem of your choice with a partner or by yourself.
 
-* **Deliverable 1**  Feb 10 Email me a list of three project ideas.
+* **Deliverable 1 (TBA)**   Email me a list of three project ideas.
 
-* **Deliverable 2**  March 20 Submit a 2-3 page proposal including the following:
+* **Deliverable 2 (TBA)**  Submit a 2-3 page proposal including the following:
 The statement of the problem to be investigated
 An explanation of why the problem is interesting
 A description of what you propose to do,
@@ -61,8 +59,8 @@ Complete the following sentence: ``The experiments were designed to shed light o
 Then explain what you plan to measure; how you will measure it (if it is not obvious); and where you will obtain test cases.
 List the tasks, broken down into two or three milestones
 
-* **Deliverable 3** April 20 Description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
+* **Deliverable 3 (TBA)** April 20 Description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
 
-* **Deliverable 4** April/May 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
+* **Deliverable 4 (TBA)** April/May 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
-* **Deliverable 5** May 10 Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
+* **Deliverable 5 (TBA)** May 10 Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
