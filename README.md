@@ -7,6 +7,8 @@
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
 |Office hours | Tu 345-445 in CS 6363 |
 
+All notes and assignments wil be posted on this website. Submission of assignment and course project material is via [canvas](https://canvas.wisc.edu/courses/77585).
+
 ## Course description
 This course covers a range of topics in programming languages, including lambda calculus and type theory, functional programming, logics for encoding programs, and automated verification techniques.
 
@@ -16,12 +18,16 @@ The goal is to expose students to a range of mathematical and practical tools fo
 The following will be populated as the course progresses:
 
 #### 🔥 Week 1 (Jan 22) Lambda calculus
-<!--
-lambda calculus introduction
-computing w/ lambda calculus
--->
 
-#### Week 2 (Jan 29) Computing in calculus
+* **Tue** Welcome to the course / Intro to the beautiful lambda calculus
+  * [notes](notes/cs704-lec-1-22-2010.pdf)
+  * Ch. 5 of TAPL 
+
+* **Thu**  Computing with lambda calculus
+  * [notes](notes/cs704-lec-01-25-2010.pdf) 
+  * Chs. 5 and 6 of TAPL
+
+#### Week 2 (Jan 29) Programming constructs & fixpoints in lambda calculus
 <!--
 Encoding programming constructs in lambda calculus
 Fixedpoint combinators
@@ -147,7 +153,7 @@ Performance will be evaluated as follows:
 ## Course Project
 For the final project, you can work on a problem of your choice with a partner or by yourself.
 
-* **Deliverable 1 (Feb 5)**   Email me a list of three project ideas.
+* **Deliverable 1 (Feb 5)**   Submit me a list of three project ideas.
 
 * **Deliverable 2 (Feb 26)**  Submit a 2-3 page proposal including the following:
 The statement of the problem to be investigated
