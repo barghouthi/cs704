@@ -38,7 +38,7 @@ Fixedpoint combinators
 *Asn 1 out*
 <!--assignment 1 release-->
 
-#### Week 3 (Feb 5) Church–Rosser / FP
+#### Week 3 (Feb 5) The Church–Rosser theorem / FP
 <!--
 church--rosser thm
 functional programming
