@@ -13,6 +13,7 @@ This course covers a range of topics in programming languages, including lambda 
 The goal is to expose students to a range of mathematical and practical tools for reasoning about programs.
 
 ## Lectures
+The following will be populated as the course progresses:
 
 #### Week 1 (Jan 22)
 <!--
@@ -67,14 +68,31 @@ encoding transition systems in logic
 -->
 
 #### Week 9 (Mar 19)
+<!--
+Automatic proofs (predicate abstraction / k-induction)
+Building a mini-verifier
+-->
 
 #### Week 10 (Mar 26)
+<!--
+concurrency verification
+Owicki-Gries proof rule
+Rely-Guarantee proofs
+-->
 
 #### Week 11 (Apr 2)
+<!--
+quantitative properties
+side channels
+-->
 
 #### Week 12 (Apr 9)
 
+
 #### Week 13 (Apr 16)
+<!--
+abstract interpretation
+-->
 
 #### Week 14 (Apr 23)
 Class presentations will be held this week.
@@ -117,8 +135,8 @@ Complete the following sentence: ``The experiments were designed to shed light o
 Then explain what you plan to measure; how you will measure it (if it is not obvious); and where you will obtain test cases.
 List the tasks, broken down into two or three milestones
 
-* **Deliverable 3 (TBA)** April 20 Description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
+* **Deliverable 3 (TBA)** Description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
 
-* **Deliverable 4 (TBA)** April/May 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
+* **Deliverable 4 (TBA)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
 * **Deliverable 5 (TBA)** May 10 Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
