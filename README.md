@@ -1,6 +1,6 @@
 # CS 704: Principles of Programming Languages (Spring 2018)
 
-| Q | A |
+| τ | τ' |
 |-|-|
 |When | Tu/Th 230-345 |
 |Where | CS 1325 |
