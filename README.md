@@ -101,17 +101,14 @@ Building a mini-verifier
 *Asn 4 out*
 <!--assignment 4 release-->
 
-#### Week 10 (Mar 26) Handling concurrency
+#### Week 10 (Mar 26) SPRING BREAK
+
+
+#### Week 11 (Apr 2) Handling concurrency
 <!--
 concurrency verification
 Owicki-Gries proof rule
 Rely-Guarantee proofs
--->
-
-#### Week 11 (Apr 2) Quantitative program properties 
-<!--
-quantitative properties
-side channels
 -->
 
 *Asn 4 due* /
