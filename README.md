@@ -15,7 +15,7 @@ The goal is to expose students to a range of mathematical and practical tools fo
 ## Lectures
 The following will be populated as the course progresses:
 
-#### Week 1 (Jan 22) Lambda calculus
+#### ► Week 1 (Jan 22) Lambda calculus
 <!--
 lambda calculus introduction
 computing w/ lambda calculus
