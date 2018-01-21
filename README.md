@@ -70,7 +70,7 @@ axiomatic semantics / hoare logic
 -->
 
 *Asn 2 due*;
-*Deliverable 2 due*
+*Deliverable 2 due*;
 *Asn 3 out;*
 <!--assignment 2 due-->
 <!--assignment 3 release-->
