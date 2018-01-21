@@ -195,4 +195,3 @@ that overlap with the material we cover in CS704. Here are some that I found hel
 
 * <a href="https://www.cs.cmu.edu/~15414/schedule.html"> Fredrikson & Platzer's course at CMU </a>
 * <a href="https://www.cs.cornell.edu/courses/cs6110/2018sp/schedule.html"> Sampson's class at Cornell </a>
-* <a href="http://www.cs.utexas.edu/~isil/cs643/"> Dillig's decision procedures class at UT Austin</a>
