@@ -43,6 +43,7 @@ typed lambda calculus
 -->
 
 *Asn 1 due*
+
 *Asn 2 out*
 <!--assignment 1 due-->
 <!--assignment 2 release-->
@@ -60,6 +61,7 @@ axiomatic semantics / hoare logic
 -->
 
 *Asn 2 due*
+
 *Asn 3 out*
 <!--assignment 2 due-->
 <!--assignment 3 release-->
@@ -111,6 +113,7 @@ side channels
 <!--
 abstract interpretation
 -->
+
 *Asn 5 released*
  
 #### Week 13 (Apr 16) TBD
@@ -121,6 +124,7 @@ abstract interpretation
 #### Week 15 (Apr 30)
 * Class presentations will be held this week.
 
+*Asn 5 due*
 
 ## Assignments
 Assignments will be posted here:
