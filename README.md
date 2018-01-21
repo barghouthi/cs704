@@ -15,57 +15,62 @@ The goal is to expose students to a range of mathematical and practical tools fo
 ## Lectures
 The following will be populated as the course progresses:
 
-#### Week 1 (Jan 22)
+#### Week 1 (Jan 22) Lambda calculus
 <!--
 lambda calculus introduction
 computing w/ lambda calculus
 -->
 
-#### Week 2 (Jan 29)
+#### Week 2 (Jan 29) Computing in calculus
 <!--
 Encoding programming constructs in lambda calculus
 Fixedpoint combinators
 -->
 
+*Asn 1 out*
 <!--assignment 1 release-->
 
-#### Week 3 (Feb 5)
+#### Week 3 (Feb 5) Church--Rosser / FP
 <!--
-functional programming
 church--rosser thm
+functional programming
 -->
 
-#### Week 4 (Feb 12)
+#### Week 4 (Feb 12) Types
 <!--
 intro to types
 typed lambda calculus
 -->
 
+*Asn 1 due*
+*Asn 2 out*
 <!--assignment 1 due-->
 <!--assignment 2 release-->
 
-#### Week 5 (Feb 19)
+#### Week 5 (Feb 19) Type inference & polymorphism
 <!--
 type inference
 polymorphic lambda calculus / sytemf
 -->
 
-#### Week 6 (Feb 26)
+#### Week 6 (Feb 26) Semantics
 <!--
 operational semantics
 axiomatic semantics / hoare logic
 -->
 
+*Asn 2 due*
+*Asn 3 out*
 <!--assignment 2 due-->
 <!--assignment 3 release-->
 
-#### Week 7 (Mar 5)
+#### Week 7 (Mar 5) Logic & SAT/SMT
 <!--
 propositional logic and DPLL
 first-order logic and SMT solvers
 -->
 
-#### Week 8 (Mar 12)
+#### Week 8 (Mar 12) Transition systems & program encodings
 <!--
 programs as transition systems / invariants
 encoding transition systems in logic
@@ -73,39 +78,43 @@ encoding transition systems in logic
 ...man examples of encodings
 -->
 
+*Asn 3 due*
 <!--assignment 3 due-->
 
-#### Week 9 (Mar 19)
+#### Week 9 (Mar 19) Automated verification
 <!--
 Automatic proofs (predicate abstraction / k-induction)
 Building a mini-verifier
 -->
 
+*Asn 4 out*
 <!--assignment 4 release-->
 
-#### Week 10 (Mar 26)
+#### Week 10 (Mar 26) Handling concurrency
 <!--
 concurrency verification
 Owicki-Gries proof rule
 Rely-Guarantee proofs
 -->
 
-#### Week 11 (Apr 2)
+#### Week 11 (Apr 2) Quantitative program properties 
 <!--
 quantitative properties
 side channels
 -->
 
+*Asn 4 due*
 <!--assignment 4 due-->
 <!--assignment 5 release-->
 
-#### Week 12 (Apr 9)
-
-
-#### Week 13 (Apr 16)
+#### Week 12 (Apr 9) Theory of abstract interpretation
 <!--
 abstract interpretation
 -->
+*Asn 5 released*
+ 
+#### Week 13 (Apr 16) TBD
+
 
 #### Week 14 (Apr 23)
 * Class presentations will be held this week.
