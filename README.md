@@ -41,6 +41,9 @@ intro to types
 typed lambda calculus
 -->
 
+<!--assignment 1 due-->
+<!--assignment 2 release-->
+
 #### Week 5 (Feb 19)
 <!--
 type inference
@@ -52,6 +55,9 @@ polymorphic lambda calculus / sytemf
 operational semantics
 axiomatic semantics / hoare logic
 -->
+
+<!--assignment 2 due-->
+<!--assignment 3 release-->
 
 #### Week 7 (Mar 5)
 <!--
@@ -67,11 +73,15 @@ encoding transition systems in logic
 ...man examples of encodings
 -->
 
+<!--assignment 3 due-->
+
 #### Week 9 (Mar 19)
 <!--
 Automatic proofs (predicate abstraction / k-induction)
 Building a mini-verifier
 -->
+
+<!--assignment 4 release-->
 
 #### Week 10 (Mar 26)
 <!--
@@ -85,6 +95,9 @@ Rely-Guarantee proofs
 quantitative properties
 side channels
 -->
+
+<!--assignment 4 due-->
+<!--assignment 5 release-->
 
 #### Week 12 (Apr 9)
 
