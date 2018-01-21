@@ -134,9 +134,9 @@ Performance will be evaluated as follows:
 ## Course Project
 For the final project, you can work on a problem of your choice with a partner or by yourself.
 
-* **Deliverable 1 (TBA)**   Email me a list of three project ideas.
+* **Deliverable 1 (Feb 5)**   Email me a list of three project ideas.
 
-* **Deliverable 2 (TBA)**  Submit a 2-3 page proposal including the following:
+* **Deliverable 2 (Feb 26)**  Submit a 2-3 page proposal including the following:
 The statement of the problem to be investigated
 An explanation of why the problem is interesting
 A description of what you propose to do.
@@ -144,12 +144,12 @@ Explain the elements that you will have to build.
 Explain the elements that you can pick up from open-source sites.
 Explain the experiment(s) or performance measurement(s) that you plan to carry out. Two good approaches are
 State the hypothesis that you hope to refute.
-Complete the following sentence: ``The experiments were designed to shed light on the following questions: . . .''
+Complete the following sentence: "The experiments were designed to shed light on the following questions: . . ."
 Then explain what you plan to measure; how you will measure it (if it is not obvious); and where you will obtain test cases.
 List the tasks, broken down into two or three milestones
 
-* **Deliverable 3 (TBA)** Description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
+* **Deliverable 3 (Apr 2)** Submit a description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
 
-* **Deliverable 4 (TBA)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
+* **Deliverable 4 (last 2 weeks of class)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
-* **Deliverable 5 (TBA)** May 10 Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
+* **Deliverable 5 (May 11)** May 10 Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
