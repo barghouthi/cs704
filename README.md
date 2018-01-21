@@ -108,9 +108,9 @@ abstract interpretation
 -->
 
 #### Week 14 (Apr 23)
-Class presentations will be held this week.
+* Class presentations will be held this week.
 #### Week 15 (Apr 30)
-Class presentations will be held this week.
+* Class presentations will be held this week.
 
 
 ## Assignments
