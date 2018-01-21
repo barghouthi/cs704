@@ -52,7 +52,7 @@ intro to types
 typed lambda calculus
 -->
 
-*Asn 1 due*/
+*Asn 1 due* /
 *Asn 2 out*
 <!--assignment 1 due-->
 <!--assignment 2 release-->
@@ -69,8 +69,8 @@ operational semantics
 axiomatic semantics / hoare logic
 -->
 
-*Asn 2 due*/
-*Deliverable 2 due*/
+*Asn 2 due* /
+*Deliverable 2 due* /
 *Asn 3 out;*
 <!--assignment 2 due-->
 <!--assignment 3 release-->
@@ -114,7 +114,7 @@ quantitative properties
 side channels
 -->
 
-*Asn 4 due*/
+*Asn 4 due* /
 *Deliverable 3 due*
 <!--assignment 4 due-->
 <!--assignment 5 release-->
@@ -134,7 +134,7 @@ abstract interpretation
 #### Week 15 (Apr 30)
 * Class presentations will be held this week.
 
-*Asn 5 due*/
+*Asn 5 due* /
 *Deliverable 5 is due May 11*
 ## Assignments
 Assignments will be posted here:
