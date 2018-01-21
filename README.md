@@ -153,3 +153,46 @@ List the tasks, broken down into two or three milestones
 * **Deliverable 4 (last 2 weeks of class)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
 * **Deliverable 5 (May 11)** May 10 Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
+
+## Resources
+There are no required textbooks for this class. The following is a list of books that should be  useful references for different parts of the course.
+
+This is an excellent reference for our lambda calculus and types material
+
+* [TAPL] Pierce, <a href="https://search.library.wisc.edu/catalog/999923278402121"> Types and Programming Langauges.</a> The MIT Press, 2002.
+
+This is an alternative lambda calculus resource.
+
+* [LC] Barendregt and Barendsen, <a href="ftp://ftp.cs.ru.nl/pub/CompMath.Found/lambda.pdf"> Introduction to Lambda Calculus.</a> March 2000.
+
+
+
+
+This book talks about decision procedures
+and their applications in verification.
+
+* [CofC] Bradley and Manna, <a href="http://search.library.wisc.edu/catalog/ocn190764844"> The Calculus of Computation. Spring, 2007.
+
+
+This is a short book on
+operational, axiomatic, and denotational semantics.
+
+* [Sem] Nielson and Nielson <a href="http://www.imm.dtu.dk/~hrni/SWA/swa.html"> Semantics with Applications. Springer, 2007.
+
+
+
+The following book covers data-flow analysis
+and abstract interpretation.
+
+* [PA] Nielson et al., <a href="http://search.library.wisc.edu/catalog/ocm42579405"> Principles of Program Analysis </a> Springer, 1999.
+
+This is another abstract interpretation resource.
+
+* [AI] Abramsky and Hankin, <a href="https://www.cs.virginia.edu/~weimer/2007-615/reading/AbramskiAI.pdf"> An Introduction to Abstract Interpretation.
+  
+There are multiple courses at other universities
+that overlap with the material we cover in CS704. Here are some that I found helpful:
+
+* <a href="https://www.cs.cmu.edu/~15414/schedule.html"> Fredrikson & Platzer's course at CMU </a>
+* <a href="https://www.cs.cornell.edu/courses/cs6110/2018sp/schedule.html"> Sampson's class at Cornell </a>
+* <a href="http://www.cs.utexas.edu/~isil/cs643/"> Dillig's decision procedures class at UT Austin</a>
