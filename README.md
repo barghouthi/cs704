@@ -171,13 +171,13 @@ This is an alternative lambda calculus resource.
 This book talks about decision procedures
 and their applications in verification.
 
-* [CofC] Bradley and Manna, <a href="http://search.library.wisc.edu/catalog/ocn190764844"> The Calculus of Computation. Spring, 2007.
+* [CofC] Bradley and Manna, <a href="http://search.library.wisc.edu/catalog/ocn190764844"> The Calculus of Computation.</a> Spring, 2007.
 
 
 This is a short book on
 operational, axiomatic, and denotational semantics.
 
-* [Sem] Nielson and Nielson <a href="http://www.imm.dtu.dk/~hrni/SWA/swa.html"> Semantics with Applications. Springer, 2007.
+* [Sem] Nielson and Nielson <a href="http://www.imm.dtu.dk/~hrni/SWA/swa.html"> Semantics with Applications.</a> Springer, 2007.
 
 
 
@@ -188,7 +188,7 @@ and abstract interpretation.
 
 This is another abstract interpretation resource.
 
-* [AI] Abramsky and Hankin, <a href="https://www.cs.virginia.edu/~weimer/2007-615/reading/AbramskiAI.pdf"> An Introduction to Abstract Interpretation.
+* [AI] Abramsky and Hankin, <a href="https://www.cs.virginia.edu/~weimer/2007-615/reading/AbramskiAI.pdf"> An Introduction to Abstract Interpretation.</a>
   
 There are multiple courses at other universities
 that overlap with the material we cover in CS704. Here are some that I found helpful:
