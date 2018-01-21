@@ -7,7 +7,9 @@
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
 |Office hours | Tu 345-445 in CS 6363 |
 
-All notes and assignments wil be posted on this website. Submission of assignment and course project material is via [canvas](https://canvas.wisc.edu/courses/77585).
+All notes and assignments wil be posted on this website. 
+
+Submission of assignments and course project deliverables is via [canvas](https://canvas.wisc.edu/courses/77585).
 
 ## Course description
 This course covers a range of topics in programming languages, including lambda calculus and type theory, functional programming, logics for encoding programs, and automated verification techniques.
