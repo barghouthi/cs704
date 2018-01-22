@@ -183,25 +183,15 @@ This is an excellent reference for our lambda calculus and types material
 
 * [TAPL] Pierce, <a href="https://search.library.wisc.edu/catalog/999923278402121"> Types and Programming Langauges.</a> The MIT Press, 2002.
 
-This is an alternative lambda calculus resource.
-
-* [LC] Barendregt and Barendsen, <a href="ftp://ftp.cs.ru.nl/pub/CompMath.Found/lambda.pdf"> Introduction to Lambda Calculus.</a> March 2000.
-
-
-
-
 This book talks about decision procedures
 and their applications in verification.
 
 * [CofC] Bradley and Manna, <a href="http://search.library.wisc.edu/catalog/ocn190764844"> The Calculus of Computation.</a> Spring, 2007.
 
-
 This is a short book on
 operational, axiomatic, and denotational semantics.
 
 * [Sem] Nielson and Nielson <a href="http://www.imm.dtu.dk/~hrni/SWA/swa.html"> Semantics with Applications.</a> Springer, 2007.
-
-
 
 The following book covers data-flow analysis
 and abstract interpretation.
