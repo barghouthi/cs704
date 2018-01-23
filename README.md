@@ -174,7 +174,7 @@ List the tasks, broken down into two or three milestones
 
 * **Deliverable 4 (last 2 weeks of class)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
-* **Deliverable 5 (May 11)** May 10 Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
+* **Deliverable 5 (May 11)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
 
 ## Resources
 There are no required textbooks for this class. The following is a list of books that should be  useful references for different parts of the course.
