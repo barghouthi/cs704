@@ -181,7 +181,7 @@ There are no required textbooks for this class. The following is a list of books
 
 This is an excellent reference for our lambda calculus and types material
 
-* [TAPL] Pierce, <a href="https://search.library.wisc.edu/catalog/999923278402121"> Types and Programming Langauges.</a> The MIT Press, 2002.
+* [TAPL] Pierce, <a href="https://search.library.wisc.edu/catalog/999923278402121"> Types and Programming Languages.</a> The MIT Press, 2002.
 
 This book talks about decision procedures
 and their applications in verification.
