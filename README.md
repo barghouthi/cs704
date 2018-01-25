@@ -32,10 +32,14 @@ The following will be populated as the course progresses:
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
 #### Week 2 (Jan 29) Programming constructs & fixpoints in lambda calculus
-<!--
-Encoding programming constructs in lambda calculus
-Fixedpoint combinators
--->
+* **Tue** Programming constructs in lambda calclus
+  * [notes](notes/cs704-lec-01-29-2010.pdf)
+  * Ch. 5 of TAPL 
+
+* **Thu**  Fixpoints in lambda calculus
+  * [notes](notes/cs704-lec-01-29-2010.pdf) 
+  *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
+        (See Might's other lambda calculus posts too.)
 
 *Asn 1 out*
 <!--assignment 1 release-->
