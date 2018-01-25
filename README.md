@@ -5,7 +5,7 @@
 |When | Tu/Th 230-345 |
 |Where | CS 1325 |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
-|Office hours | Tu 345-445 in CS 6363 |
+|Office hours | Wed 300-400 in CS 6363 |
 
 All notes and assignments wil be posted on this website. 
 
