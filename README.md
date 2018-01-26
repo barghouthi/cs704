@@ -41,7 +41,7 @@ The following will be populated as the course progresses:
   *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
         (See Might's other lambda calculus posts too.)
 
-*Asn 1 out*
+[*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
 <!--assignment 1 release-->
 
 #### Week 3 (Feb 5) The Church–Rosser theorem / FP
@@ -144,7 +144,7 @@ Assignments will be posted here:
 
 | Assignment | Due date |
 | - | - |
-|   |   |
+| [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
 
 ## Evaluation
 Performance will be evaluated as follows:
