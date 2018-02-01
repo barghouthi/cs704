@@ -1,3 +1,7 @@
+# mainly from http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/
+# and
+# http://matt.might.net/articles/python-church-y-combinator/
+
 U = lambda x: x(x)
 fact = lambda h: lambda x: 1 if x == 0 else x * (h (h))(x-1)
 factu = U (fact)
