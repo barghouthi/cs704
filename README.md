@@ -31,7 +31,7 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
-#### 🔥 Week 2 (Jan 29) Programming constructs & fixpoints in lambda calculus
+#### Week 2 (Jan 29) Programming constructs & fixpoints in lambda calculus
 * **Tue** Programming constructs in lambda calclus
   * [notes](notes/cs704-lec-01-29-2010.pdf)
   * Ch. 5 of TAPL 
@@ -45,11 +45,12 @@ The following will be populated as the course progresses:
 [*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
 <!--assignment 1 release-->
 
-#### Week 3 (Feb 5) The Church–Rosser theorem / FP
-<!--
-church--rosser thm
-functional programming
--->
+#### 🔥 Week 3 (Feb 5) The Church–Rosser theorem / FP
+* **Tue** Deep dive into functional programming
+  * *no notes—tonnes of online tutorials*
+ 
+* **Thu** The Church–Rosser theorem
+  * [notes](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/1.LAMBDA-CALCULUS.html#churchRosser)
 
 *Deliverable 1 due*
 
