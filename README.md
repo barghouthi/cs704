@@ -37,7 +37,7 @@ The following will be populated as the course progresses:
   * Ch. 5 of TAPL 
 
 * **Thu**  Fixpoints in lambda calculus
-  * [notes](notes/cs704-lec-01-29-2010.pdf) 
+  * [notes](notes/cs704-lec-01-29-2010.pdf) (same as Tue)
   * [code from class](code/fixpoint_combinators.py)
   *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
         (See Might's other lambda calculus posts too.)
