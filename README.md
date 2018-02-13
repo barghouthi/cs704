@@ -45,7 +45,7 @@ The following will be populated as the course progresses:
 [*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
 <!--assignment 1 release-->
 
-#### 🔥 Week 3 (Feb 5) The Church–Rosser theorem / FP
+#### Week 3 (Feb 5) The Church–Rosser theorem / FP
 * **Tue** Deep dive into functional programming
   * *no notes—tonnes of online tutorials*
  
@@ -54,7 +54,7 @@ The following will be populated as the course progresses:
 
 *Deliverable 1 due*
 
-#### Week 4 (Feb 12) Types
+#### 🔥 Week 4 (Feb 12) Types
 * **Tue** Introduction to types
   * Ch. 8 of TAPL
   
