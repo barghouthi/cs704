@@ -64,7 +64,7 @@ The following will be populated as the course progresses:
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
 
 *Asn 1 due* /
-*Asn 2 out*
+[*Asn 2 out*](asn/asn2.pdf)
 
 
 <!--assignment 1 due-->
