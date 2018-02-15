@@ -152,6 +152,7 @@ Assignments will be posted here:
 | Assignment | Due date |
 | - | - |
 | [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
+| [asn2](asn/asn2.pdf)  | Mar 1 |
 
 ## Evaluation
 Performance will be evaluated as follows:
