@@ -76,6 +76,8 @@ The following will be populated as the course progresses:
   
 * **Thu** System F
   * Ch. 23 of TAPL
+  
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
 #### Week 6 (Feb 26) Semantics
 <!--
