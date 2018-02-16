@@ -54,7 +54,7 @@ The following will be populated as the course progresses:
 
 *Deliverable 1 due*
 
-#### 🔥 Week 4 (Feb 12) Types
+#### Week 4 (Feb 12) Types
 * **Tue** Introduction to types
   * Ch. 8 of TAPL
   
@@ -70,11 +70,12 @@ The following will be populated as the course progresses:
 <!--assignment 1 due-->
 <!--assignment 2 release-->
 
-#### Week 5 (Feb 19) Type inference & polymorphism
-<!--
-type inference
-polymorphic lambda calculus / sytemf
--->
+#### 🔥 Week 5 (Feb 19) Type inference & polymorphism
+* **Tue** Type inference
+  * Ch. 22 of TAPL
+  
+* **Thu** System F
+  * Ch. 23 of TAPL
 
 #### Week 6 (Feb 26) Semantics
 <!--
