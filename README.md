@@ -143,8 +143,8 @@ Rely-Guarantee proofs
 <!--
 abstract interpretation
 -->
-*Asn 4 due /
-Asn 5 released*
+*Asn 4 due* / 
+*Asn 5 released*
  
 #### Week 13 (Apr 16) TBD
 
