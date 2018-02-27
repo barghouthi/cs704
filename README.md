@@ -89,9 +89,7 @@ The following will be populated as the course progresses:
 
 *you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/"), which is freely available*
 
-*Asn 2 due* /
-*Deliverable 2 due* /
-*Asn 3 out*
+
 <!--assignment 2 due-->
 <!--assignment 3 release-->
 
@@ -101,6 +99,10 @@ propositional logic and DPLL
 first-order logic and SMT solvers
 -->
 
+*Asn 2 due* /
+*Deliverable 2 due* /
+*Asn 3 out*
+
 #### Week 8 (Mar 12) Transition systems & program encodings
 <!--
 programs as transition systems / invariants
@@ -109,8 +111,7 @@ encoding transition systems in logic
 ...man examples of encodings
 -->
 
-*Asn 3 due*
-<!--assignment 3 due-->
+
 
 #### Week 9 (Mar 19) Automated verification
 <!--
@@ -118,6 +119,8 @@ Automatic proofs (predicate abstraction / k-induction)
 Building a mini-verifier
 -->
 
+*Asn 3 due*
+<!--assignment 3 due-->
 *Asn 4 out*
 <!--assignment 4 release-->
 
@@ -131,7 +134,7 @@ Owicki-Gries proof rule
 Rely-Guarantee proofs
 -->
 
-*Asn 4 due* /
+
 *Deliverable 3 due*
 <!--assignment 4 due-->
 <!--assignment 5 release-->
@@ -140,8 +143,8 @@ Rely-Guarantee proofs
 <!--
 abstract interpretation
 -->
-
-*Asn 5 released*
+*Asn 4 due /
+Asn 5 released*
  
 #### Week 13 (Apr 16) TBD
 
