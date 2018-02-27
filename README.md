@@ -119,9 +119,9 @@ Automatic proofs (predicate abstraction / k-induction)
 Building a mini-verifier
 -->
 
-*Asn 3 due*
-<!--assignment 3 due-->
+*Asn 3 due* /
 *Asn 4 out*
+<!--assignment 3 due-->
 <!--assignment 4 release-->
 
 #### Week 10 (Mar 26) SPRING BREAK
