@@ -74,16 +74,18 @@ The following will be populated as the course progresses:
 * **Tue** Type inference
   * Ch. 22 of TAPL
   
-* **Thu** System F
+* **Thu** System F **cancelled due to baby**
   * Ch. 23 of TAPL
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
 #### Week 6 (Feb 26) Semantics
-<!--
-operational semantics
-axiomatic semantics / hoare logic
--->
+* **Tue** Operational semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
+  
+  
+* **Thu** Axiomatic semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
 
 *Asn 2 due* /
 *Deliverable 2 due* /
