@@ -87,6 +87,8 @@ The following will be populated as the course progresses:
 * **Thu** Axiomatic semantics
   * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
 
+*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/"), which is freely available*
+
 *Asn 2 due* /
 *Deliverable 2 due* /
 *Asn 3 out*
