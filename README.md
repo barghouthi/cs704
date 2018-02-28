@@ -70,7 +70,7 @@ The following will be populated as the course progresses:
 <!--assignment 1 due-->
 <!--assignment 2 release-->
 
-#### 🔥 Week 5 (Feb 19) Type inference & polymorphism
+#### Week 5 (Feb 19) Type inference & polymorphism
 * **Tue** Type inference
   * Ch. 22 of TAPL
   
@@ -79,7 +79,7 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
-#### Week 6 (Feb 26) Semantics
+#### 🔥 Week 6 (Feb 26) Semantics
 * **Tue** Operational semantics
   * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
   
