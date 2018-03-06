@@ -79,7 +79,7 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
-#### 🔥 Week 6 (Feb 26) Semantics
+####  Week 6 (Feb 26) Semantics
 * **Tue** Operational semantics
   * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
   
@@ -93,11 +93,15 @@ The following will be populated as the course progresses:
 <!--assignment 2 due-->
 <!--assignment 3 release-->
 
-#### Week 7 (Mar 5) Logic & SAT/SMT
-<!--
-propositional logic and DPLL
-first-order logic and SMT solvers
--->
+#### 🔥 Week 7 (Mar 5) Logic & SAT/SMT
+* **Tue** Propositional logic and SAT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
+  
+  
+* **Thu** First-order logic and SMT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture6-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture7-6up.pdf)
+
+*For more references, consult Bradley and Manna's book [CofC]—see references below*
 
 *Asn 2 due* /
 *Deliverable 2 due* /
