@@ -1,0 +1,179 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+             		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex
+\usepackage{amssymb}
+
+\usepackage{stmaryrd}
+
+
+\title{CS704: Assignment 3}
+\author{}
+\date{}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+
+The first question is adapted from Nielsen and Nielsen.
+
+\section{Operational Semantics}
+In class, we defined the operational semantics of a simple imperative programming language with while loops. In this question, you will extend the language and its semantics.
+
+\begin{enumerate}[label=\bf\Alph*]
+  \item Suppose we extend the language with a \texttt{repeat $P$ until $b$} statement, where $b$ is a Boolean expression
+  and $P$ is a program.
+  Provide the rule(s) defining
+   the big-step (natural) semantics of the
+   repeat-until statement---i.e., define the $\to$ relation.
+  Your semantics should model the intuitive
+  meaning of a repeat-until statement: that $P$ is repeatedly
+  executed until $b$ is \emph{true}, in which case we exit the
+  loop.
+
+  \item Prove that for all programs $P$ and Boolean expressions $b$,
+  the programs
+
+  \texttt{repeat $P$ until $b$}
+
+  and
+
+  \texttt{$P$; if $b$ then skip else (repeat $P$ until $b$)}
+
+  are equivalent.
+
+  Recall that two programs $P_1$, $P_2$ are equivalent
+  iff  for all states $s,s'$,
+  we have
+  $$\langle P_1, s \rangle \to s' \emph{ iff } \langle P_2, s \rangle \to s'$$
+
+  \item As above, provide the semantics for
+  a for-loop construct of the form
+
+  \texttt{for x = $a$ to $a'$ do $P$}
+
+  where $a$ and $a'$ are arithmetic expressions.
+
+\end{enumerate}
+\section{Hoare Logic}
+
+In this question, all variables hold real-world integers---i.e.,
+don't worry about machine arithmetic and  overflows.
+
+
+\begin{enumerate}[label=\bf\Alph*]
+\item
+Using Hoare logic, give a proof of the following Hoare triple:
+
+$\{x \geq 0 \land y > 0\}$
+\begin{verbatim}
+r = x;
+q = 0;
+while (r >= y){
+  r = r - y;
+  q = q + 1;
+}
+\end{verbatim}
+$\{x = y * q + r \land 0 \leq r < y\}$
+
+You need only provide an annotation of the form $\{P\}$
+for every location in the program; you do not need
+to show a derivation tree.
+Accompany your answer with an English description.
+
+\item Using Hoare logic, give a proof that the following
+sequence of statements swaps the values of x and y.
+
+\begin{verbatim}
+x = x + y;
+y = x - y;
+x = x - y;
+\end{verbatim}
+
+You may use auxiliary variables to denote the
+initial/final values of x and y.
+Again, you need only supply annotations of the form $\{P\}$
+for every location along the program.
+Accompany your answer with an English description.
+
+\item Consider the following Hoare triple.
+
+$\{true\}$
+\begin{verbatim}
+x = 10;
+y = 10;
+
+while (x + y > 0)
+  x = x - 1;
+  y = y - 1;
+  z = x + y;
+\end{verbatim}
+$\{z=0\}$
+
+
+Prove that the Hoare triple is valid
+by giving an inductive loop invariant.
+Show that your answer is indeed an inductive loop invariant.
+\end{enumerate}
+
+\section{Type Inference}
+In class, we used Robinson's unification algorithm to
+solve a set of type equations of the form $\{S_i = T_i\}_{i\in 1\ldots n}.$
+In cases where no principal unifier exists,
+the algorithm returns \emph{fail}.
+
+
+
+
+For completeness, we supply the unification algorithm below,
+in the style of TAPL, as covered in lecture.
+The input to the algorithm is a set $C$ of equations
+of the form $S=T$.
+In the conditionals, we use
+ $S = X$ to mean that $S$ is a single variable $X$.
+Similarly, $S = S_1 \to S_2$ means that $S$ is of the form
+$S_1 \to S_2$, where $S_i$ could be variables, types,
+or more complex expressions.
+
+\begin{algorithm}
+\caption{Unification Algorithm}\label{alg:unify}
+\begin{algorithmic}
+\Procedure{unify}{$C$}
+\If{$C = \emptyset$} \Return [\ ]
+\Else
+  \State let $\{S = T\} \cup C' = C$
+  \If {$S = T$} \textsc{unify}(C')
+  \ElsIf {$S = X$ and $X \not\in FV(T)$}
+    \State \Return $\textsc{unify}([X \mapsto T]C') \circ [X \mapsto T]$
+  \ElsIf {$T = X$ and $X \not\in FV(S)$}
+   \State \Return $\textsc{unify}([X \mapsto S]C') \circ [X \mapsto S]$
+  \ElsIf {$S = S_1 \to S_2$ and $T = T_1 \to T_2$}
+    \State \Return $\textsc{unify}(C' \cup \{S_1 = T_1, S_2 = T_2\})$
+  \Else \State \Return \emph{fail}
+  \EndIf
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+\begin{enumerate}[label=\bf\Alph*]
+
+\item
+  Provide an example set of equations where the algorithm fails.
+  Ensure that your equations \emph{do not include}
+   cases where (1) a variable $X$ appears in both $S_i$ and $T_i$,
+  or (2) $S_i$ is a function type and $T_i$ is not (or vice versa).
+  In other words, these cases ensure that you do not give a trivial
+  answer where the algorithm immediately fails when it considers
+  such equation.
+
+
+\item Prove that \textsc{unify} always terminates.
+\end{enumerate}
+\end{document}
