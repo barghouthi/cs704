@@ -105,7 +105,7 @@ The following will be populated as the course progresses:
 
 *Asn 2 due* /
 *Deliverable 2 due* /
-*Asn 3 out*
+*[Asn 3 out](asn/asn3.pdf)*
 
 #### Week 8 (Mar 12) Transition systems & program encodings
 <!--
@@ -167,6 +167,7 @@ Assignments will be posted here:
 | - | - |
 | [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
 | [asn2](asn/asn2.pdf)  | ~~Mar 1~~ Mar 8 |
+| [asn3](asn/asn3.pdf)  | ~~Mar 1~~ Mar 22 |
 
 ## Evaluation
 Performance will be evaluated as follows:
