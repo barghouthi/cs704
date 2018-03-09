@@ -5,7 +5,7 @@
 |When | Tu/Th 230-345 |
 |Where | CS 1325 |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
-|Office hours | Wed 300-400 in CS 6363 |
+|Office hours | Tue 100-200 in CS 6363 |
 
 All notes and assignments wil be posted on this website. 
 
@@ -54,7 +54,7 @@ The following will be populated as the course progresses:
 
 *Deliverable 1 due*
 
-#### 🔥 Week 4 (Feb 12) Types
+#### Week 4 (Feb 12) Types
 * **Tue** Introduction to types
   * Ch. 8 of TAPL
   
@@ -64,35 +64,48 @@ The following will be populated as the course progresses:
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
 
 *Asn 1 due* /
-*Asn 2 out*
+[*Asn 2 out*](asn/asn2.pdf)
 
 
 <!--assignment 1 due-->
 <!--assignment 2 release-->
 
 #### Week 5 (Feb 19) Type inference & polymorphism
-<!--
-type inference
-polymorphic lambda calculus / sytemf
--->
+* **Tue** Type inference
+  * Ch. 22 of TAPL
+  
+* **Thu** System F **cancelled due to baby**
+  * Ch. 23 of TAPL
+  
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
-#### Week 6 (Feb 26) Semantics
-<!--
-operational semantics
-axiomatic semantics / hoare logic
--->
+####  Week 6 (Feb 26) Semantics
+* **Tue** Operational semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
+  
+  
+* **Thu** Axiomatic semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
+
+*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/"), which is freely available*
+
+
+<!--assignment 2 due-->
+<!--assignment 3 release-->
+
+#### 🔥 Week 7 (Mar 5) Logic & SAT/SMT
+* **Tue** Propositional logic and SAT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
+  
+  
+* **Thu** First-order logic and SMT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture6-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture7-6up.pdf)
+
+*For more references, consult Bradley and Manna's book [CofC]—see references below*
 
 *Asn 2 due* /
 *Deliverable 2 due* /
 *Asn 3 out*
-<!--assignment 2 due-->
-<!--assignment 3 release-->
-
-#### Week 7 (Mar 5) Logic & SAT/SMT
-<!--
-propositional logic and DPLL
-first-order logic and SMT solvers
--->
 
 #### Week 8 (Mar 12) Transition systems & program encodings
 <!--
@@ -102,8 +115,7 @@ encoding transition systems in logic
 ...man examples of encodings
 -->
 
-*Asn 3 due*
-<!--assignment 3 due-->
+
 
 #### Week 9 (Mar 19) Automated verification
 <!--
@@ -111,7 +123,9 @@ Automatic proofs (predicate abstraction / k-induction)
 Building a mini-verifier
 -->
 
+*Asn 3 due* /
 *Asn 4 out*
+<!--assignment 3 due-->
 <!--assignment 4 release-->
 
 #### Week 10 (Mar 26) SPRING BREAK
@@ -124,7 +138,7 @@ Owicki-Gries proof rule
 Rely-Guarantee proofs
 -->
 
-*Asn 4 due* /
+
 *Deliverable 3 due*
 <!--assignment 4 due-->
 <!--assignment 5 release-->
@@ -133,7 +147,7 @@ Rely-Guarantee proofs
 <!--
 abstract interpretation
 -->
-
+*Asn 4 due* / 
 *Asn 5 released*
  
 #### Week 13 (Apr 16) TBD
@@ -152,6 +166,7 @@ Assignments will be posted here:
 | Assignment | Due date |
 | - | - |
 | [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
+| [asn2](asn/asn2.pdf)  | ~~Mar 1~~ Mar 8 |
 
 ## Evaluation
 Performance will be evaluated as follows:
