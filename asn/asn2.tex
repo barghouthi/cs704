@@ -1,0 +1,158 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}
+\usepackage{enumitem}
+             		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex
+\usepackage{amssymb}
+
+\usepackage{stmaryrd}
+
+
+\title{CS704: Assignment 2}
+\author{}
+\date{}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+Questions 2 and 3 are adapted from TAPL.
+
+%\begin{comment}
+%\section{Galois connections}
+%Consider these two definitions of Galois connections:
+
+%\paragraph{Definition 1:}
+%$(L,\alpha,\gamma,M)$ is a Galois connection
+%between the complete lattices $(L,\sqsubseteq)$
+%and $(M,\sqsubseteq)$ if and only if
+%$\alpha:L \rightarrow M$ and $\gamma:M \rightarrow L$
+%are monotone functions that satisfy the following conditions:
+%$$\gamma \circ \alpha \sqsupseteq \lambda x. x$$
+%$$\alpha \circ \gamma \sqsubseteq \lambda x. x$$
+%where $\circ$ is function composition---that is,
+%$\alpha \circ \gamma$ is the function that applies
+%$\alpha$ \emph{to the result of} $\gamma$.
+
+%\paragraph{Definition 2:}
+%$(L,\alpha,\gamma,M)$ is a Galois connection
+%between the complete lattices $(L,\sqsubseteq)$
+%and $(M,\sqsubseteq)$ if and only if
+%$\alpha:L \rightarrow M$ and $\gamma:M \rightarrow L$
+%are total functions such that for all $l\in L, m \in M$,
+%$$\alpha(l) \sqsubseteq m \Leftrightarrow l \sqsubseteq \gamma (m)$$
+
+%~\\
+%Prove that the two definitions are equivalent.
+%\end{comment}
+
+\section{Fixed-point combinators}
+
+\begin{enumerate}[label=\bf\Alph*]
+\item The most popular encoding of recursion in $\lambda$-calculus
+    is using the Y combinator.
+    Another approach is using the simple U combinator (which is
+    not a fixed-point combinator):
+    $$U =_\textrm{df} \lambda x.\ x\ x$$
+    (We use $=_\textrm{df}$ to denote a definition, as opposed to
+    semantic equivalence.)
+    Using the U combinator, we can define the factorial
+    function as follows:
+    $$\emph{fact} =_\textrm{df} U(\lambda f.\ \lambda n.\ ~\emph{if}~(n=0)~\emph{then}~1~\emph{else}~n*((f f) (n-1)))$$
+    (For clarity, we extend pure lambda calculus
+    with conditionals and arithmetic.)\\
+    Prove that $\emph{fact}$ satisfies
+    the following $\lambda$-calculus equation:
+    $$\emph{fact} = (\lambda n. ~\emph{if}~(n=0)~\emph{then}~1~\emph{else}~n*(\emph{fact} (n-1)))$$
+
+\item
+Consider the following theorem for characterizing
+fixed-point combinators themselves as fixed points:
+\begin{equation}
+  \label{Eq:FPTheoremStmt}
+  \textrm{Let $G = \lambda y . \lambda f . f(yf)$.
+  Then $M$ is a fixed-point combinator if and only if $M = GM$.}
+\end{equation}
+
+\noindent
+(Note: Recall that the following $\lambda$-calculus transformation
+is called the $\eta$-reduction rule:
+\[
+  (\lambda x.Mx) \rightarrow_\eta M,
+\]
+where $x$ does not occur as one of the free variables of $M$.
+You are allowed to use $\eta$-reduction in this question.)
+
+\medskip
+
+\noindent
+{\bf subpart (i)}
+
+\noindent
+Use Theorem \ref{Eq:FPTheoremStmt} to show that
+$Y =_\textrm{df} \lambda f . (( \lambda x.f(xx) )( \lambda x.f(xx) ))$
+is a fixed-point combinator.
+
+\medskip
+
+\noindent
+{\bf subpart(ii)}
+
+\noindent
+Use Theorem~\ref{Eq:FPTheoremStmt} to show
+that the U combinator ($\lambda x.\ x\ x$)
+is a not a fixed-point combinator.
+
+\noindent
+{\bf subpart (iii)}
+
+\noindent
+Prove Theorem \ref{Eq:FPTheoremStmt}.
+(Note that the theorem involves an ``if and only if'';
+consequently, your proof should have two parts.)
+
+\noindent
+{\bf subpart (iv)}
+
+The Y combinator
+allows us to find a $\lambda$-term $g$
+that satisfies a single recursive equation over $\lambda$-terms of the
+form $g = \ldots g \ldots g \ldots$
+
+Suppose that we are presented with a collection of $k$ mutually recursive
+equations:
+\[
+  \begin{array}{rcl}
+    g_1 & = & \ldots g_1 \ldots g_k \ldots \\
+        & \vdots & \\
+    g_k & = & \ldots g_1 \ldots g_k \ldots
+  \end{array}
+\]
+Explain how to solve for $g_1, \ldots, g_k$.
+
+
+\end{enumerate}
+
+\section{Church Encodings}
+\begin{enumerate}[label=\bf\Alph*]
+  \item In lecture, we defined Church numerals and Booleans, along with some  operations over them.
+Define a lambda term that tests equality of two Church numerals,
+returning $\lambda t. \lambda f. t$ when they are equal,
+and $\lambda t. \lambda f. f$ when they are not equal.
+
+\item Suppose you are given a combinator $\textsf{pred}$
+that computes the predecessor of a Church numeral.
+Use $\textsf{pred}$ to define subtraction in lambda calculus.
+(Note that, given 0, $\textsf{pred}$ returns 0.)
+\end{enumerate}
+
+\section{Typed Lambda Calculus}
+   Is there any context $\Gamma$ and type $\tau$
+  such that $\Gamma \vdash x\ x : \tau$. If so,
+  provide a $\Gamma$ and $\tau$ and show the typing derivation;
+  if not, prove that there does not exist
+  such a $\Gamma$ and $\tau$.
+\end{document}
