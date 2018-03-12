@@ -60,7 +60,7 @@ that does not involve while loops.
 Recall that a \emph{state} $s: V \to \mathbb{Z}$
 of a program $P$ is a map from variables $V$ to integer values.
 Given a program $P$, the operational semantics
-define a relation $\to$ denoting the execution of $P$ beginning at some state $s$ and ending in state $s'$, denoted as follows:
+define a relation $\to$ describing the execution of $P$ beginning at some state $s$ and ending in state $s'$, denoted as follows:
 $$ \opsem{P,s}{s'} $$
 \end{definition}
 
@@ -101,7 +101,7 @@ This is best seen through an example:
 \section{First-Order Theory}
 Recall the first-order theories we discussed in class.
 To encode the relation $\trans$, we will use
-the theorem of \emph{linear integer arithmetic} (LIA).
+the theory of \emph{linear integer arithmetic} (LIA).
 LIA allows formulas to contain
 integer-valued variables, equality, ineqality, addition, and
 \emph{no multiplication} (multiplication will only be to replace addition, i.e., $x + x$ will be written as $2x$).
@@ -121,12 +121,12 @@ Formally, an LIA formula $\varphi$  is of the following form:
     & \mid \forall x \ldotp \varphi
 \end{align*}
 where $a_1,a_2$ are arithmetic expressions of the form
-$c_1x_1 + \ldotp c_nx_n$, where $c_1 \in \mathbb{Z}$
+$c_1x_1 + \ldots + c_nx_n$, where $c_i \in \mathbb{Z}$
 and $x_i$ are first-order variables. For instance, $2x + 3y$.
 Note that $\Rightarrow$ and $\iff$ can be written using $\land,\neg$.
 \end{definition}
 
-A model $m$ for a formula $\varphi$, denoted $m \models \varphi$
+A model $m$ for a formula $\varphi$, denoted $m \models \varphi$,
 is a mapping from the free variables of $\varphi$,
 denoted $\fv(\varphi)$, to integers, that satisfies the
 formula.
@@ -158,10 +158,10 @@ is the same as its initial value, since it is not modified by the assignment sta
   assuming $V = \{x,y\}$
 \end{example}
 
-\paragraph{Full Programs}
+\paragraph{Loop-free Programs}
 Now that we have discussed how to construct $\trans$
 for a simple program comprised of a single assignment,
-we can define the rules for a full (loop-free) programs.
+we can define the rules for full (loop-free) programs.
 
 \begin{definition}[Transition-Relation Encoding]
 \begin{align*}
@@ -203,13 +203,13 @@ To illustrate the encoding, let us consider some examples:
   \enc(y \gets y + 1) \equiv
   y' = y + 1 \land x' = x$$
 
-  Now that we simply conjoin the two transition relations;
-  however, we have to be careful about how the variable
+  We now simply conjoin the two transition relations;
+  however, we have to be careful about the variable
   names: the output variables of $\trans_1$ need be the same as
   the input variables of $\trans_2$.
   Therefore we conjoin them as follows:
   $$\trans_1(x,y,x'',y'') \land \trans_2(x'',y'',x',y')$$
-  Notice that we renamed the outputs of $\trans_1$
+  Notice that we have renamed the outputs of $\trans_1$
   and inputs of $\trans_2$ so that they actually match;
   these variables are $V'' = \{x'',y''\}$.
   Intuitively, $V''$ defines the state of the program
@@ -313,4 +313,55 @@ since final states in the encoding are over primed variables.
     $x = 0$, therefore invalidating the postcondition,
     which specifies the $x > 1$ when the program terminates.
 \end{example}
+
+\section{Bounded Verification}
+We will now enrich our programming language to include while loops.
+For simplicity, we shall assume  a program $P$ contains
+a single while loop; that is, $P$ is of the form:
+$$P_\pre; \whilest~ b ~\dost~ P_\body$$
+where $P_\pre$ and $P_\body$ are loop-free programs.
+
+Suppose we want to check validity of a
+Hoare triple $\{\phi\} P \{\psi\}$
+where $P$ contains a while loop.
+We will now show how to check that the Hoare triple
+is valid assuming $P$ can only take a bounded number
+of loop iterations, e.g., 3 loop iterations.
+In the literature, this process is known as \emph{bounded verification},
+\emph{bounded model checking}, or \emph{symbolic execution}.
+
+The first step is to encode executions that take $n$
+loop steps in $P$.
+We define this using the function
+$\enc_n(P)$ as follows, where $n \in [0,\infty)$.
+%
+\begin{align*}
+\enc_n(P) \triangleq
+\trans_\pre(V,V^1) \land
+\left(\bigwedge_{i = 1}^{n}
+b_i \land \trans_\body(V^i, V^{i+1})\right)
+\land \neg b^{n+1}
+\end{align*}
+%
+where $\trans_\pre \equiv \enc(P_\pre)$
+and $\trans_\body \equiv \enc(P_\body)$.
+Notice how we rename the variables such that
+we have $n$ copies of the transition relation
+of the loop body,
+where iteration $i$ starts with variables $V^i$
+and ends with variables $V^{i+1}$.
+Also, note that at the end we ensure that the loop-exit condition is true: $\neg b^{n+1}$.
+
+Now that we know how to encode $n$
+loop iterations, we can check if a Hoare triple
+is valid for loop  $\leq n$ loop iterations by
+checking validity of the following formula:
+\begin{align*}
+  \bigwedge_{i=1}^n \left(\phi \land \enc_i(P) \Rightarrow \psi^{i+1}\right)
+\end{align*}
+Note that each conjunct $i$ ensures
+that executions that start in $\phi$
+and run for $i$ loop iterations end in a state satisfying
+$\psi$.
+
 \end{document}
