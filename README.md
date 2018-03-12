@@ -93,7 +93,7 @@ The following will be populated as the course progresses:
 <!--assignment 2 due-->
 <!--assignment 3 release-->
 
-#### 🔥 Week 7 (Mar 5) Logic & SAT/SMT
+####  Week 7 (Mar 5) Logic & SAT/SMT
 * **Tue** Propositional logic and SAT solvers
   * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
   
@@ -107,13 +107,13 @@ The following will be populated as the course progresses:
 *Deliverable 2 due* /
 *[Asn 3 out](asn/asn3.pdf)*
 
-#### Week 8 (Mar 12) Transition systems & program encodings
-<!--
-programs as transition systems / invariants
-encoding transition systems in logic
-...maybe Horn clauses
-...man examples of encodings
--->
+#### 🔥 Week 8 (Mar 12) Transition systems & program encodings
+
+* **Tue** Bounded encodings
+  * [notes](notes/transRelEnc.pdf)
+ 
+* **Thu** Unbounded encodings
+  * notes coming soon
 
 
 
