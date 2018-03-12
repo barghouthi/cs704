@@ -1,0 +1,316 @@
+\documentclass{amsart}
+
+\usepackage{hyperref,url,amsmath,amssymb,proof,stmaryrd,tikz-cd,mathabx}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{xca}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\input{preamble}
+
+\begin{document}
+
+
+\title{Logical Encoding of Programs}
+
+\author{Aws Albarghouthi}
+\address{University of Wisconsin--Madison}
+\email{aws@cs.wisc.edu}
+
+\maketitle
+
+\begin{abstract}
+These notes describe the process
+of encoding program executions as a formula
+in first-order logic.
+This allows us to apply various forms of
+automated verification by checking satisfiability
+of the encodings.
+\end{abstract}
+
+\section{Language}
+Recall the simple imperative language we used
+to present operational semantics in class.
+For now, we will use a subset of that language
+that does not involve while loops.
+
+\begin{definition}[Language Syntax]
+  A program $P$ is defined as follows:
+  \begin{align*}
+    P ::= &~ x \gets a & \text{assignment}\\
+    & \mid \ifst~ b ~ \thenst~ P_1 ~\elsest~ P_2 & \text{conditional}\\
+    & \mid P_1; P_2 & \text{sequential composition}
+  \end{align*}
+  where $a$ is an arithmetic (integer) expression over program variables,
+  and $b$ is a Boolean expression over program variables.
+  We shall use $V$ to denote the set of all program variables.
+  All variables $v \in V$ are assumed to be integer-typed $(\mathbb{Z})$.
+\end{definition}
+
+\begin{definition}[Language Semantics]
+Recall that a \emph{state} $s: V \to \mathbb{Z}$
+of a program $P$ is a map from variables $V$ to integer values.
+Given a program $P$, the operational semantics
+define a relation $\to$ denoting the execution of $P$ beginning at some state $s$ and ending in state $s'$, denoted as follows:
+$$ \opsem{P,s}{s'} $$
+\end{definition}
+
+\section{Transition Relations}
+We now define \emph{transition relations},
+which are relations defining the operational semantics
+of a program. We will later show how to define
+transition relations in first-order logic.
+Given a program $P$, we will define its transition
+relation $\trans(V,V')$ over two sets of variables,
+the program variables $V$ and a copy of program variables
+$V'$. The idea is that the variables $V$ hold the initial
+state $s$ of the program, and $V'$ hold the final state $s'$
+after the program has completed execution.
+This is best seen through an example:
+
+\begin{example}
+  Consider the simple program $P$ defined as a single
+  statement:
+  $$x \gets x + 1$$
+  The set of variables $V$ of $P$ is the singleton set $\{x\}$.
+  The set $V'$ is $\{x'\}$.
+  Therefore the transition relation $\trans(x,x')$
+  is over two variables, $x$ and $x'$.
+  Concretely, $\trans$ is defined as follows:
+  $$\trans = \{(n,n+1) \mid n \in \mathbb{Z}\}$$
+  That is, for any number $n$, the pair $(n,n+1)$
+  is in the transition relation,
+  denoting that if we start executing the program
+  with $x = n$, we end up with $x' = n+1$.
+
+  Observe how there is a one-to-one
+  correspondence between elements of the transition
+  relation and pairs of states $s,s'$ such that
+  $\opsem{P,s}{s'}$.
+\end{example}
+
+\section{First-Order Theory}
+Recall the first-order theories we discussed in class.
+To encode the relation $\trans$, we will use
+the theorem of \emph{linear integer arithmetic} (LIA).
+LIA allows formulas to contain
+integer-valued variables, equality, ineqality, addition, and
+\emph{no multiplication} (multiplication will only be to replace addition, i.e., $x + x$ will be written as $2x$).
+Checking satisfiability of formulas in LIA
+is decidable.
+
+\begin{definition}[Linear Integer Arithmetic]
+Formally, an LIA formula $\varphi$  is of the following form:
+\begin{align*}
+  \varphi ::= &~ a_1 = a_2\\
+    & \mid  a_1 \leq a_2 \\
+    & \mid a_1 < a_2 \\
+    & \mid \varphi \land \varphi \\
+    & \mid \varphi \lor \varphi \\
+    & \mid \neg \varphi\\
+    & \mid \exists x \ldotp \varphi\\
+    & \mid \forall x \ldotp \varphi
+\end{align*}
+where $a_1,a_2$ are arithmetic expressions of the form
+$c_1x_1 + \ldotp c_nx_n$, where $c_1 \in \mathbb{Z}$
+and $x_i$ are first-order variables. For instance, $2x + 3y$.
+Note that $\Rightarrow$ and $\iff$ can be written using $\land,\neg$.
+\end{definition}
+
+A model $m$ for a formula $\varphi$, denoted $m \models \varphi$
+is a mapping from the free variables of $\varphi$,
+denoted $\fv(\varphi)$, to integers, that satisfies the
+formula.
+For example, consider $x + y > 0$.
+Let $m = \{x \mapsto 1, y \mapsto 0\}$.
+We have  $m \models x + y > 0$
+
+\section{Encoding Transition Relations}
+\paragraph{Single assignments}
+Let us now consider how we would encode a transition
+relation of a single assignment.
+Let the assignment be of the form
+$$x \gets a$$
+We simply transform this into a formula $\varphi$ defined
+as follows:
+$$\varphi \equiv x' = a \land \bigwedge_{y \neq x, y \in V} y' = y$$
+Notice that the variable $x$ on the lhs of the assignment
+is encoded as $x'$, denoting the final value of $x$ after
+the assignment is performed.
+Notice also that the final state of every variable $y$ other than $x$
+is the same as its initial value, since it is not modified by the assignment statement.
+
+
+\begin{example}
+  Consider the assignment
+  $$x \gets x + y$$
+  This is encoded as the transition relation
+  $$\trans(x,y,x',y') \equiv x' = x + y \land y' = y$$
+  assuming $V = \{x,y\}$
+\end{example}
+
+\paragraph{Full Programs}
+Now that we have discussed how to construct $\trans$
+for a simple program comprised of a single assignment,
+we can define the rules for a full (loop-free) programs.
+
+\begin{definition}[Transition-Relation Encoding]
+\begin{align*}
+  \enc(x \gets a) \triangleq&~  x' = a \land \bigwedge_{y \neq x, y \in V} y' = y\\
+  \enc(\ifst~ b ~ \thenst~ P_1 ~\elsest~ P_2) \triangleq&~
+    (b \Rightarrow \enc(P_1)) \land (\neg b \Rightarrow \enc(P_2))\\
+  \enc(P_1; P_2) \triangleq&~ \exists V'' \ldotp \trans_1(V,V'') \land \trans_2(V'',V')\\
+  ~\\
+  & \text{where } \trans_1(V,V') \equiv \enc(P_1)\\
+        & \hspace{3em} \trans_2(V,V') \equiv \enc(P_2)
+\end{align*}
+\end{definition}
+
+To illustrate the encoding, let us consider some examples:
+
+\begin{example}
+  Consider the following program $P$
+  $$\ifst~ x > 0 ~ \thenst~ x \gets x + 1 ~\elsest~ x \gets y$$
+  The encoding $\enc(P)$ is a formula over $V$ and $V'$
+  defined as follows:
+  $$(x > 0 \Rightarrow x' = x + 1 \land y' = y)
+  \land (x \leq 0 \Rightarrow x' = y \land y' = y)$$
+  The left conjunct defines the transition relation
+  of the \emph{then} branch;
+  the right conjunct defines the \emph{else} branch.
+\end{example}
+
+\begin{example}
+  Now consider the following program $P$:
+  $$x \gets x + 1; y \gets y + 1$$
+  The function $\enc$ encodes this program
+  one instruction at a time, and combines the results.
+  First, we  encode $x \gets x + 1$ as follows:
+  $$\trans_1(x,y,x',y') \equiv
+  \enc(x \gets x + 1) \equiv
+  x' = x + 1 \land y' = y$$
+  Then, we  encode $y \gets y + 1$:
+  $$\trans_2(x,y,x',y') \equiv
+  \enc(y \gets y + 1) \equiv
+  y' = y + 1 \land x' = x$$
+
+  Now that we simply conjoin the two transition relations;
+  however, we have to be careful about how the variable
+  names: the output variables of $\trans_1$ need be the same as
+  the input variables of $\trans_2$.
+  Therefore we conjoin them as follows:
+  $$\trans_1(x,y,x'',y'') \land \trans_2(x'',y'',x',y')$$
+  Notice that we renamed the outputs of $\trans_1$
+  and inputs of $\trans_2$ so that they actually match;
+  these variables are $V'' = \{x'',y''\}$.
+  Intuitively, $V''$ defines the state of the program
+  after executing the first instruction;
+  but since we only care about the final state,
+  we \emph{quantify the variables $V''$ away}.
+  Finally, we arrive at the following encoding
+
+  $$\exists x'',y'' \ldotp
+  (x'' = x + 1 \land y'' = y) \land
+  (y' = y'' + 1 \land x' = x'')$$
+  The first conjunct is $\trans_1(x,y,x'',y'')$,
+  and the second is
+  $\trans_2(x'',y'',x',y')$.
+  Notice that the free variables of this formula
+  are $x,y$ and $x',y'$, defining the initial states
+  and final states, respectively.
+\end{example}
+
+
+\section{Soundness and Completeness}
+We need to show that our encoding
+is sound and complete.
+Soundness ensures that
+the transition relation does not over-approximate
+the operational semantics relation $\to$.
+Completeness, on the other hand,
+ensures that every element of $\to$ is also in
+the encoding.
+
+\begin{theorem}[Soundness]
+  Fix a program $P$ with variables $V$.
+  Let $m \models \enc(P)$.
+  Let $$s = \{v \mapsto m(v) \mid v \in V\}$$
+  $$s' = \{v' \mapsto m(v') \mid v' \in V'\}$$
+  Then, $\opsem{P,s}{s'}$.
+\end{theorem}
+
+\begin{theorem}[Completeness]
+  Fix a program $P$ with variables $V$.
+  Let $s,s'$ be such that
+  $\opsem{P,s}{s'}$.
+  Let
+  $$m = \{v\mapsto s(v) \mid v \in V\} \cup \{v'\mapsto s'(v') \mid v' \in V'\}$$
+  Then, $m \models \enc(P)$.
+\end{theorem}
+
+\begin{proof}
+  Both proofs proceed by structural induction
+  on the program.
+\end{proof}
+
+\section{Verification}
+Now that we have defined the encoding,
+we can use it to check if a Hoare triple
+holds.
+Suppose we are given a Hoare triple
+$\{\phi\} P \{\psi\}$,
+where $\phi$ and $\psi$ are LIA formulas
+over program variables.
+We would like to check if the Hoare triple is valid;
+informally, for any state $s$ satisfying $\phi$,
+for any state $s'$ such that $\opsem{P,s}{s'}$,
+we want to make sure that $s'$ satisfies $\psi$.
+
+To automatically check if the Hoare triple
+is valid, we encode \emph{all} executions starting at
+$\phi$ and check whether they end up in $\psi$.
+Formally, we check validity of the following formula:
+$$ (\phi \land \enc(P)) \Rightarrow \psi' \text{ is VALID}$$
+$$\emph{iff}$$
+$$\{\phi\} P \{\psi\} \text{ is VALID}$$
+Intuitively, $\phi \land \enc(P)$ defines
+the set executions of $P$ constrained to the ones
+starting at $\phi$. The implication ensures
+that all final states are contained in $\psi'$.
+Notice that we use a primed version of $\psi$,
+since final states in the encoding are over primed variables.
+
+\begin{example}
+  Let us consider a simple example.
+  To check validity of
+  $$\{x > 0\} x \gets x + 1 \{x > 1\}$$
+  we check validity of the following formula:
+  $$(x > 0 \land x' = x + 1) \Rightarrow x' > 1$$
+  which is valid.
+\end{example}
+
+\begin{example}
+  Here is another example, but this time the Hoare triple
+  is invalid:
+  $$\{x > 0\} x \gets x + y \{x > 1\}$$
+  The formula $\Psi$
+    $$\Psi \equiv (x > 0 \land x' = x + y \land y'=y) \Rightarrow x' > 1$$
+    is not valid.
+    Here is a counterexample; i.e., a model $m$ for the negation
+    of the formula, $\neg\Psi$:
+    $$m = \{x \mapsto 0, y \mapsto 0, x' \mapsto 0, y' \mapsto 0\}$$
+    In other words, $m$ says that if $x = y = 0$
+    in the initial state, the final state will be such that
+    $x = 0$, therefore invalidating the postcondition,
+    which specifies the $x > 1$ when the program terminates.
+\end{example}
+\end{document}
