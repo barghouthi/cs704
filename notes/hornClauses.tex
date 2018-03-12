@@ -1,0 +1,188 @@
+\documentclass{amsart}
+
+\usepackage{hyperref,url,amsmath,amssymb,proof,stmaryrd,tikz-cd,mathabx,prooftree}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{xca}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\input{preamble}
+
+\begin{document}
+
+
+\title{Unbounded Verification with Horn Clauses}
+
+\author{Aws Albarghouthi}
+\address{University of Wisconsin--Madison}
+\email{aws@cs.wisc.edu}
+
+\maketitle
+
+\begin{abstract}
+These notes describe the process
+of encoding program executions as a formula
+over \emph{constrained Horn clauses},
+a class of first-order logic formulas.
+Horn clauses allow us to encode the search
+for a Hoare-logic annotation of the program
+that proves its correctness.
+\end{abstract}
+
+\section{Motivating Example}
+We begin with an example illustrating constrained Horn
+clauses and how they can encode Hoare-logic proofs.
+
+\paragraph{A Hoare-style Proof}
+Consider the following program and the associated
+Hoare triple:
+\begin{align*}
+& \{x > 0\}\\
+& y \gets x;\\
+&z \gets x + y\\
+& \{z > 0\}
+\end{align*}
+
+To prove that the above Hoare triple is valid,
+we following the composition rule of Hoare-logic:
+
+\begin{figure}[h]
+  \centering
+  \prooftree
+       \{\phi\} P_1 \{\psi\} \quad\quad
+       \{\psi\} P_2 \{\chi\}
+  \justifies
+  \{\phi\} P_1; P_2 \{\chi\}
+  \using \textsc{Composition}
+  \endprooftree
+\end{figure}
+
+Reading the rule upwards,
+to prove the above Hoare triple,
+we need to construct two valid Hoare triples
+of the following form:
+$$\{x> 0\} ~ y \gets x ~ \{r(x,y,z)\}$$
+$$\{r(x,y,z)\} ~ z \gets x + y ~ \{z > 0\}$$
+where $r(x,y,z)$ is some formula over $x,y$
+that we need to discover.
+One solution for
+$r(x,y,z)$ is $x > 0 \land y > 0$.
+This gives us the following two valid Hoare triples:
+$$\{x> 0\} ~ y \gets x ~ \{x > 0 \land y > 0 \}$$
+$$\{x > 0 \land y > 0\} ~ z \gets x + y ~ \{z > 0\}$$
+which following the composition rule,
+imply that our original Hoare triple is valid.
+
+\paragraph{Encoding}
+Above, we showed how to pose the search for a Hoare-logic
+annotation
+as a search for a relation $r(x,y,z)$ over program variables.
+We can view $r(x,y,z)$ as a relation in first-order
+logic, and generate a set of constraints whose
+models give solutions of $r$.
+
+Consider the following formulas, $C_1$ and $C_2$,
+which encode the two Hoare triples above:
+
+\begin{align*}
+C_1 \triangleq&
+  \forall V,V' \ldotp (x > 0 \land \enc(y = x)) \Rightarrow r(x',y',z')\\
+%
+C_2 \triangleq&
+  \forall V,V' \ldotp   \left(r(x,y,z) \land
+  \enc(z = x + y)\right) \Rightarrow r(x',y',z')
+\end{align*}
+Both of these formulas
+are over the theory of linear integer arithmetic (LIA),
+where we also have a relation symbol $r$,
+a ternary relation over integers, i.e., in $\mathbb{Z}^3$.
+Since there are no free variables in $C_1,C_2$,
+a model for $m \models C_1 \land C_2$
+will only give an interpretation for $r(x,y,z)$.
+
+The two formulas $C_1$ and $C_2$
+look very much like our encodings for checking Hoare triples
+from the previous lecture.
+By construction, any model $m$ of $C_1$
+must be such that for any initial state where $x > 0$,
+if we execute $y = x$, we end in a state in $r(x',y',z')$;
+note that we apply the relation $r$ to the final-state variables.
+So any interpretation of $r$ must result in a valid Hoare triple
+$\{x> 0\} ~ y \gets x ~ \{r(x,y,z)\}$.
+
+Recall that a model $m$ maps $r$ to a susbet of $\mathbb{Z}^3$,
+we will only consider subsets of $\mathbb{Z}^3$
+that we can write as formulas in LIA;
+therefore, we cannot have a model, for instance,
+that contains only prime numbers, a relation that is not representable in our simple theory of LIA.
+
+One possible $m$ is the one that sets $r(x,y,z)$
+to the formula $x > 0 \land y > 0$.
+If we plug in this formula for occurrences of
+$r$ in $C_1, C_2$, we get the following formulas:
+
+\begin{align*}
+m(C_1) \triangleq&
+  \forall V,V' \ldotp (x > 0 \land \enc(y = x)) \Rightarrow x' > 0 \land y' > 0\\
+%
+m(C_2) \triangleq&
+  \forall V,V' \ldotp   \left(x > 0 \land y > 0 \land
+  \enc(z = x + y)\right) \Rightarrow x' > 0 \land y' > 0
+\end{align*}
+Both formulas are valid.
+
+\section{Constrained Horn Clauses}
+
+\section{Constructing Horn Clauses from Programs}
+We now consider programs $P$
+of the form:
+$$P_\pre; \whilest~ b ~\dost~ P_\body$$
+We would like to show that a Hoare triple
+$\{\phi\} P \{\psi\}$ is valid.
+To do so, we will generate a number of Horn clauses
+whose solution is an inductive loop invariant:
+
+\begin{align*}
+  C_1 \triangleq&
+  (\phi \land \enc(P_\pre)) \Rightarrow \inv(V') & \text{initiation}\\
+  %
+  C_2 \triangleq&
+  \left(\inv(V) \land b \land
+    \enc(P_\body)\right) \Rightarrow \inv(V') & \text{consecution}\\
+%
+  C_3 \triangleq&
+    \inv(V) \land \neg b \Rightarrow \psi & \text{safety}
+\end{align*}
+
+A model $m \models C_1\land C_2 \land C_3$
+gives an interpretation of $\inv$ that is an inductive loop invariant.
+
+The encoding for our program model is sound and complete.
+
+\begin{theorem}[Soundness]
+Let $m \models C_1 \land C_2 \land C_3$.
+The predicate $m(\inv)$ is an inductive loop invariant.
+\end{theorem}
+
+\begin{theorem}[Completeness]
+If $C_1 \land C_2 \land C_3$ is unsatisfiable,
+then $\{\phi\} ~ P ~ \{\psi\}$ is not a valid Hoare triple.
+\end{theorem}
+
+While the above theorems assure that our encoding
+is correct; in practice, checking satisfiability of
+constrained Horn clauses in LIA is undecidable.
+
+
+\section{Solving Constrained Horn Clauses}
+
+\end{document}
