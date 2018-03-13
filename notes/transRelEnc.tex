@@ -244,7 +244,7 @@ the encoding.
   Fix a program $P$ with variables $V$.
   Let $m \models \enc(P)$.
   Let $$s = \{v \mapsto m(v) \mid v \in V\}$$
-  $$s' = \{v' \mapsto m(v') \mid v' \in V'\}$$
+  $$s' = \{v \mapsto m(v') \mid v' \in V'\}$$
   Then, $\opsem{P,s}{s'}$.
 \end{theorem}
 
@@ -253,7 +253,7 @@ the encoding.
   Let $s,s'$ be such that
   $\opsem{P,s}{s'}$.
   Let
-  $$m = \{v\mapsto s(v) \mid v \in V\} \cup \{v'\mapsto s'(v') \mid v' \in V'\}$$
+  $$m = \{v\mapsto s(v) \mid v \in V\} \cup \{v'\mapsto s'(v) \mid v \in V\}$$
   Then, $m \models \enc(P)$.
 \end{theorem}
 
