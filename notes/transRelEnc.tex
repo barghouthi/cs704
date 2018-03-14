@@ -364,5 +364,74 @@ that executions that start in $\phi$
 and run for $i$ loop iterations end in a state satisfying
 $\psi$.
 
+\section{Induction using Bounded Verification}
+We have thus discussed how to check correctness
+of a program up to an unrolling bound $n$.
+We will now show how to use bounded verification
+to construct an inductive argument that proves
+correctness of a program \emph{for all} $n$.
 
+Suppose we have some predicate $\emph{prop}(i)$
+that is parameterized by some number $i \in \mathbb{N}$,
+and we want to show that $\emph{prop}(i)$ is true
+for all $i \in \mathbb{N}$.
+A proof by induction proceeds in two steps:
+\begin{enumerate}
+  \item \textbf{Base case:}
+  Show that $\emph{prop}(0)$ is true.
+
+  \item \textbf{Inductive step:}
+  Show that for any $i$,
+  if $\emph{prop}(i)$ is true, then $\emph{prop}(i+1)$
+  is also true.
+\end{enumerate}
+These two conditions, as we all know from kindergarten,
+imply that $\forall i \in \mathbb{N} \ldotp \emph{prop}(i) \text{ is true}$.
+
+We can try to apply induction to the proof
+of validity of a Hoare triple $\{\phi\} P \{\psi\}$,
+as follows:
+\begin{enumerate}
+  \item \textbf{Base case:}
+  Show that
+  $$(\phi \land \trans_\pre(V,V') \land \neg b) \Rightarrow \psi'$$
+  is valid.
+  In other words, show that the program satisfies
+  the Hoare triple if it takes 0 loop iterations.
+
+  \item \textbf{Inductive step:}
+  Show that
+  $$(\psi \land b \land \trans_\body(V,V') \land \neg b')
+  \Rightarrow \psi'$$
+  is valid.
+  In other words, assuming the program starts
+  in a state satisfying the postcondition,
+  then executing the loop once should maintain
+  that the program still satisfies the postcondition.
+\end{enumerate}
+Together, these conditions imply that
+the Hoare triple $\{\phi\} P \{\psi\}$
+is valid.
+
+\begin{example}
+  Consider the following Hoare triple:
+  \begin{align*}
+    &\{x > 0\} \\
+    &\whilest ~ x > 0  ~ \dost\\
+    &\ \ \ x \gets x - 1\\
+    &\{x \geq 0\}
+  \end{align*}
+\end{example}
+
+\begin{enumerate}
+  \item \textbf{Base case:}
+  Since $P_\pre$ is the empty program, we get the following
+  formula:
+  $$(x>0 \land x = x' \land x' \leq 0) \Rightarrow x' > 0$$
+  This formula is (vacuously) valid,
+  as the program has to execute the loop at least once.
+
+  \item \textbf{Inductive step:}
+  TO BE CONTINUED
+\end{enumerate}
 \end{document}
