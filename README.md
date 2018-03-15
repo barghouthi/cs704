@@ -112,8 +112,9 @@ The following will be populated as the course progresses:
 * **Tue** Bounded encodings
   * [notes](notes/transRelEnc.pdf)
  
-* **Thu** Unbounded encodings
-  * notes coming soon
+* **Thu** Automating inductive proofs
+  * same notes as Tue
+  * code coming soon
 
 
 
