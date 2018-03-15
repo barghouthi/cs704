@@ -371,6 +371,7 @@ We will now show how to use bounded verification
 to construct an inductive argument that proves
 correctness of a program \emph{for all} $n$.
 
+\paragraph{Induction}
 Suppose we have some predicate $\emph{prop}(i)$
 that is parameterized by some number $i \in \mathbb{N}$,
 and we want to show that $\emph{prop}(i)$ is true
@@ -427,11 +428,66 @@ is valid.
   \item \textbf{Base case:}
   Since $P_\pre$ is the empty program, we get the following
   formula:
-  $$(x>0 \land x = x' \land x' \leq 0) \Rightarrow x' > 0$$
+  $$(x>0 \land x = x' \land x' \leq 0) \Rightarrow x' \geq 0$$
   This formula is (vacuously) valid,
   as the program has to execute the loop at least once.
 
   \item \textbf{Inductive step:}
-  TO BE CONTINUED
+  For the inductive step, we check that,
+  assuming the program starts at the loop head
+  in a state satisfying the postcondition,
+  then executes one loop iteration,
+  it ends in a state in the postcondition (assuming the loop terminates).
+  This is encoded as follows:
+  $$(x \geq 0 \land x > 0 \land x' = x - 1 \land x' \leq 0) \Rightarrow x' \geq 0$$
+  This formula is valid.
+  \emph{Checking validity of this formula, effectively, checks that
+  the postcondition is an inductive loop invariant.}
 \end{enumerate}
+
+\paragraph{$k$-induction}
+%
+Induction, in its simple form above, will generally
+not work.
+The problem is that the postcondition may be too weak
+for an inductive loop invariant, and we instead
+require a stronger argument.
+
+We can instead use $k$-induction, where consider
+$k$ base cases and $k$ steps of iteration.
+$k$-induction is a generalization of $1-$induction
+above:
+
+\begin{enumerate}
+  \item \textbf{Base case:}
+  Show that $\emph{prop}(0),\ldots,\emph{prop}(k-1)$ is true.
+
+  \item \textbf{Inductive step:}
+  Show that if $\emph{prop}(n),\ldots,\emph{prop}(n+k-1)$
+  are true, then $\emph{prop}(n+k)$ is true.
+\end{enumerate}
+These two conditions together imply that
+$\emph{prop}(i)$ is true for all $i \in \mathbb{N}$.
+
+We can apply this idea to the proof of programs:
+
+\begin{enumerate}
+  \item \textbf{Base case:}
+  Show that the following is valid:
+  \begin{align*}
+    \bigwedge_{i=0}^{k-1} \left(\phi \land \enc_i(P) \Rightarrow \psi^{i+1}\right)
+  \end{align*}
+  This shows that the program is correct for $0,\ldots,k-1$
+  loop iterations.
+
+  \item \textbf{Inductive step:}
+  Then, we show that the following formula is valid:
+  \begin{align*}
+    (\bigwedge_{i=0}^{k-1}
+    \psi^{i} \land b^i \land  \trans_\body(V^i,V^{i+1}))
+    \land \neg b^{k} \Rightarrow \psi^k
+  \end{align*}
+\end{enumerate}
+Together these two cases ensure that the program
+is correct for any number of loop iterations.
 \end{document}
