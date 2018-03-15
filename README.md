@@ -114,7 +114,7 @@ The following will be populated as the course progresses:
  
 * **Thu** Automating inductive proofs
   * same notes as Tue
-  * [code from lecture](code/z3tut.py)
+  * [code from lecture](code/z3/z3tut.py)
 
 
 
