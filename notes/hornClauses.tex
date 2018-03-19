@@ -182,6 +182,46 @@ While the above theorems assure that our encoding
 is correct; in practice, checking satisfiability of
 constrained Horn clauses in LIA is undecidable.
 
+\section{Constructing Horn Clauses from Arbitrary Programs}
+In the previous section, we saw how to encode the verification
+problem for programs with a single loop. We now consider programs
+with an arbitrary number of loops.
+
+To do so, we assume each statement $P$ in the program has a unique
+line number, denoted by $\ell(P)$, and a child or two, $\ell_1(P)$
+and $\ell_2(P)$, denoting the true and false branches of a while loop
+or if statement.
+The following definition of $\enchorn$ demonstrates
+how to take a program statement and encode it as a set of Horn clauses.
+Note that if and while statements require two Horn clauses,
+one for each possible branch taken.
+%
+\begin{align*}
+  \enchorn(x \gets a) \triangleq&  \inv_i(V) \land \enc(x \gets a) \Rightarrow \inv_j(V')\\
+  \enchorn(\ifst \ b \ \thenst \ P_1 \ \elsest \ P_2) \triangleq&
+    \{\inv_i(V) \land b \Rightarrow \inv_j(V), \\
+    & \inv_i(V) \land \neg b \Rightarrow \inv_k(V)\}\\
+    \enchorn(\whilest \ b \ \dost \ P_1) \triangleq&
+      \{\inv_i(V) \land b \Rightarrow \inv_j(V), \\
+      & \inv_i(V) \land \neg b \Rightarrow \inv_k(V)\}
+\end{align*}
+where above $\ell(P) = i$, $\ell_1(P) = j$, and $\ell_2(P) = k$,
+for every case of $P$ considered.
+
+Now, given a program $P$, we apply $\enchorn$ to every statement
+in $P$, i.e., to every while statement, if statement, and assignment
+statement, and collect all Horn clauses in a set.
+Let $\clss$ be the set of Horn clauses collected for $P$.
+Assume that $P$'s first statement is labeled $\init$ (entry) and last statement
+is labeled $\ret$ (exit).
+Then, to prove a Hoare triple $\{\phi\} \ P  \ \{\psi\}$,
+we solve the following Horn clauses:
+%
+$$ \clss \cup \{\phi \Rightarrow \inv_\init(V), \  \inv_\ret(V) \Rightarrow \psi\}$$
+%
+The two additional Horn clauses signify that the set of initial states
+must be in the invariant at statement $\init$, and the
+invariant at the exit statement must be in $\psi$.
 
 \section{Solving Constrained Horn Clauses}
 
