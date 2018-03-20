@@ -112,7 +112,7 @@ The following will be populated as the course progresses:
 * **Tue** Bounded encodings
   * [notes](notes/transRelEnc.pdf)
  
-* **Thu** Automating inductive proofs
+* **Thu** Bounded encodings and Z3 tutorial
   * same notes as Tue
   * [code from lecture](code/z3/z3tut.py)
 
