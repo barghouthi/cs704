@@ -242,10 +242,10 @@ We show the encoding below:
   %
   C_2 \triangleq&
   \inv(x,y,r,q) \land r\geq y \land
-    \enc(P_\body)\right \Longrightarrow \inv(x',y',r',q') & \text{consecution}\\
+    \enc(P_\body) \Longrightarrow \inv(x',y',r',q') & \text{consecution}\\
 %
   C_3 \triangleq&
-    \inv(x,y,r,q) \land  r < y \Longrightarrow \{x = y * q + r \land 0 \leq r < y\}
+    \inv(x,y,r,q) \land  r < y \Longrightarrow x = y * q + r \land 0 \leq r < y
  & \text{safety}
 \end{align*}
 where $\enc(P_\pre)$ and $\enc(P_\body)$ are as described in the previous
@@ -366,8 +366,6 @@ $mc$ is always greater than or equal to 91, all we have to do
 is to assume the summary that it always returns a value greater than
 or equal to 91, regardless of the output.
 
-
-\end{description}
 \end{example}
 
 \section{Solving Constrained Horn Clauses}
