@@ -141,6 +141,47 @@ m(C_2) \triangleq&
 Both formulas are valid.
 
 \section{Constrained Horn Clauses}
+A \emph{constrained Horn clause} $\cls$, or Horn clause for
+short, is a first-order logic formula of the form
+\[
+\rel_1(\vec{v}_1) \land \rel_2(\vec{v}_2) \land \ldots \land \rel_{n-1}(\vec{v}_{n-1})
+\land \varphi \Longrightarrow \head_\cls
+\]
+where:
+\begin{itemize}
+  \item each relation $\rel_i \in \rels$ is of arity  equal to the length of the
+    vector of variables $\vec{v}_i$;
+  \item $\varphi$ is a conjunction of atoms over the first-order theory, which contain non relation symbols outside those interpreted by the theory (e.g., $\phi$ could be $x > 0 \land y > 0$);
+  \item the left-hand side of the implication ($\Longrightarrow$) is called the
+    \emph{body} of $\cls$; and
+  \item $H_\cls$, the \emph{head} of $\cls$, is either a relation application
+    $\rel_n(\vec{v}_n)$ or an interpreted formula $\varphi'$.
+  \item  All free variables
+  are assumed to be universally quantified, e.g., $x+y > 0
+  \Longrightarrow \rel(x,y)$ means $\forall x,y \ldotp x + y > 0
+  \Longrightarrow \rel(x,y)$.
+\end{itemize}
+
+%
+%\jh{In the interpretation, yes? So with $\Rightarrow$?}
+%
+
+
+\paragraph{Semantics.}
+We will write $\clss$ for a set of clauses $\{\cls_1,\ldots,\cls_n\}$.
+Let $G$ be a graph over relation symbols such that
+there is an edge $(r_1,r_2)$ iff $r_1$ appears in the body of
+some clause $\cls_i$ and $r_2$ appears in its head.
+We say that $\clss$ is \emph{recursive} iff $G$ has a cycle.
+The set $\clss$ is \emph{satisfiable} if
+there exists an interpretation $\interp$ of relation symbols $\rel_i$ such that every clause
+$\cls \in \clss$ is valid.
+We say that $\interp$ satisfies $\clss$ (denoted $\interp\models \bigwedge_{\cls_i \in \clss} \cls_i$)
+iff for all
+$\cls \in \clss$, $\interp \cls$ is valid (i.e., equivalent to $\emph{true}$),
+where $\interp \cls$ is $\cls$ with every relation application $\rel(\vec{v})$
+replaced by its interepretation in $m$, which we denote as $\interp(\rel(\vec{v}))$.
+
 
 \section{Constructing Horn Clauses from Programs}
 We now consider programs $P$
@@ -182,7 +223,37 @@ While the above theorems assure that our encoding
 is correct; in practice, checking satisfiability of
 constrained Horn clauses in LIA is undecidable.
 
+\begin{example}
+Consider the following program from your assignment:
+\begin{align*}
+&\{x \geq 0 \land y > 0\}\\
+& r \gets x;\\
+& q \gets 0;\\
+& \whilest \ r \geq y \ \dost\\
+& \ \ \ \ r \gets r - y;\\
+& \ \ \ \ q \gets q + 1;\\
+&\{x = y * q + r \land 0 \leq r < y\}
+\end{align*}
+
+We show the encoding below:
+\begin{align*}
+  C_1 \triangleq&
+  x \geq 0 \land y > 0 \land \enc(P_\pre) \Longrightarrow \inv(x',y',r',q') & \text{initiation}\\
+  %
+  C_2 \triangleq&
+  \inv(x,y,r,q) \land r\geq y \land
+    \enc(P_\body)\right \Longrightarrow \inv(x',y',r',q') & \text{consecution}\\
+%
+  C_3 \triangleq&
+    \inv(x,y,r,q) \land \neg r < y \Longrightarrow \{x = y * q + r \land 0 \leq r < y\}
+ & \text{safety}
+\end{align*}
+where $\enc(P_\pre)$ and $\enc(P_\body)$ are as described in the previous
+lectures.
+\end{example}
+
 \section{Constructing Horn Clauses from Arbitrary Programs}
+\paragraph{Loops}
 In the previous section, we saw how to encode the verification
 problem for programs with a single loop. We now consider programs
 with an arbitrary number of loops.
@@ -223,6 +294,7 @@ The two additional Horn clauses signify that the set of initial states
 must be in the invariant at statement $\init$, and the
 invariant at the exit statement must be in $\psi$.
 
+\paragraph{Recursion}
 \section{Solving Constrained Horn Clauses}
 
 \end{document}
