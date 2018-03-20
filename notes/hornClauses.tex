@@ -294,7 +294,83 @@ The two additional Horn clauses signify that the set of initial states
 must be in the invariant at statement $\init$, and the
 invariant at the exit statement must be in $\psi$.
 
-\paragraph{Recursion}
+\paragraph{Recursion} We now consider the problem of
+encoding programs with procedures.
+Given a procedure $f$ that takes one input an returns
+one output, we encode the procedure as a transition
+relation $f(x,y)$, where $x$ denotes the input to
+the function and the $y$ the output. This transition relation
+is called a \emph{function summary}, as it captures the effect
+of the input--output behavior of a function while hiding the internal
+computation.
+
+For simplicity, we show how to perform the encoding for a single
+recursive function, $f$, by redefining the encoding function
+$\enc(f)$ as follows:
+
+\begin{align*}
+  \enc(x \gets a) \triangleq&~  x' = a \land \bigwedge_{y \neq x, y \in V} y' = y\\
+  \enc(\ifst~ b ~ \thenst~ P_1 ~\elsest~ P_2) \triangleq&~
+    (b \Rightarrow \enc(P_1)) \land (\neg b \Rightarrow \enc(P_2))\\
+  \enc(P_1; P_2) \triangleq&~ \exists V'' \ldotp \trans_1(V,V'') \land \trans_2(V'',V')\\
+  & \text{where } \trans_1(V,V') \equiv \enc(P_1)\\
+        & \hspace{3em} \trans_2(V,V') \equiv \enc(P_2)\\
+  \enc(y \gets f(x)) \triangleq&~ f(x,y) \land \bigwedge_{z \neq y, y \in V} z' = z\\
+\end{align*}
+
+The following Horn clause encodes the transition relation $f(x,y)$:
+
+Now, suppose we want to show the that following
+Hoare triple is valid:
+
+$$ \{ \phi \} \ y \gets f(x) \ \{ \psi \}$$
+
+We encode the following Horn clauses:
+\begin{align*}
+\enc(f) \Longrightarrow f(x,y)  \\
+\phi \land f(x,y) \Longrightarrow \psi
+\end{align*}
+The first Horn clause encodes the relation $f(x,y)$;
+the second encodes the Hoare triple, using the transition relation for
+$f$.
+
+\begin{example}
+Consider the following popular recursive function, called McCarthy 91:
+\begin{align*}
+& mc(p):\\
+& \ifst\ p > 100\\
+& \ \ \ r \gets p - 10\\
+& \elsest\\
+& \ \ \ p1 \gets p + 11\\
+& \ \ \ p2 \gets mc(p1)\\
+& \ \ \ r \gets mc(p2)
+\end{align*}
+where $r$ is the return value.
+
+We want to show the following Hoare triple:
+$$\{\emph{true}\} \ r \gets mc(p) \ \{r \geq 91\}$$
+
+Using the above encoding, we get:
+
+\begin{align*}
+p > 100 \land r = p - 10 \Longrightarrow& mc(p,r)\\
+p \leq 100 \land p1 \gets p + 11 \land mc(p1,p2) \land mc(p2,r) \Longrightarrow& mc(p,r)\\
+\emph{true} \land mc(p,r) \Longrightarrow& r \geq 91
+\end{align*}
+
+One solution for the above is the interpretation that
+sets $mc(p,r)$ to the following relation:
+$$ mc(p,r) \equiv r \geq 91$$
+In other words, in order to prove that that return value of
+$mc$ is always greater than or equal to 91, all we have to do
+is to assume the summary that it always returns a value greater than
+or equal to 91, regardless of the output.
+
+
+\end{description}
+\end{example}
+
 \section{Solving Constrained Horn Clauses}
+To be continued...
 
 \end{document}
