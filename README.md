@@ -107,7 +107,7 @@ The following will be populated as the course progresses:
 *Deliverable 2 due* /
 *[Asn 3 out](asn/asn3.pdf)*
 
-#### 🔥 Week 8 (Mar 12) Transition systems & program encodings
+####  Week 8 (Mar 12) Transition systems & program encodings
 
 * **Tue** Bounded encodings
   * [notes](notes/transRelEnc.pdf)
@@ -118,11 +118,12 @@ The following will be populated as the course progresses:
 
 
 
-#### Week 9 (Mar 19) Automated verification
-<!--
-Automatic proofs (predicate abstraction / k-induction)
-Building a mini-verifier
--->
+#### 🔥Week 9 (Mar 19) Automated verification
+* **Tue** Finding Hoare proofs with Horn clauses
+  * [notes](notes/hornClauses.pdf)
+ 
+* **Thu** Automatically solving Horn clauses / intro to assignment 4
+  * same notes as Tue
 
 *Asn 3 due* /
 *Asn 4 out*
