@@ -474,9 +474,12 @@ We can apply this idea to the proof of programs:
 
 \begin{enumerate}
   \item \textbf{Base case:}
-  Show that the following is valid:
+  Show that the following formulas are valid:
   \begin{align*}
-    \bigwedge_{i=0}^{k-1} \left(\phi \land \trans_\body(V,V^1) \land \ldots \land \trans_\body(V^i,V^{i+1}) \Rightarrow \psi^{i+1}\right)
+    \phi &\Rightarrow \psi\\
+    \phi \land b \land \trans(V,V^1) \land \neg b^1 &\Rightarrow \psi^1\\
+    \ldots\\
+    \phi \land b \land \trans(V,V^1) \land \ldots \land b^{k-1} \land \trans(V^{k-1}, V^k) \land \neg b^{k} &\Rightarrow \psi^k
   \end{align*}
   This shows that the program is correct for $0,\ldots,k$
   loop iterations.
