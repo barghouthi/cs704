@@ -371,7 +371,7 @@ We will now show how to use bounded verification
 to construct an inductive argument that proves
 correctness of a program \emph{for all} $n$.
 
-\paragraph{Induction}
+\paragraph{Induction Principle}
 Suppose we have some predicate $\emph{prop}(i)$
 that is parameterized by some number $i \in \mathbb{N}$,
 and we want to show that $\emph{prop}(i)$ is true
@@ -389,24 +389,26 @@ A proof by induction proceeds in two steps:
 These two conditions, as we all know from kindergarten,
 imply that $\forall i \in \mathbb{N} \ldotp \emph{prop}(i) \text{ is true}$.
 
+\paragraph{Hoare proofs via induction}
 We can try to apply induction to the proof
-of validity of a Hoare triple $\{\phi\} P \{\psi\}$,
+of validity of a Hoare triple of the form:
+$$\{\phi\}\ \whilest\  b\  \dost\  P_\body\  \{\psi\}$$
 as follows:
 \begin{enumerate}
   \item \textbf{Base case:}
   Show that
-  $$(\phi \land \trans_\pre(V,V') \land \neg b) \Rightarrow \psi'$$
+  $$\phi \Rightarrow \psi$$
   is valid.
   In other words, show that the program satisfies
   the Hoare triple if it takes 0 loop iterations.
 
   \item \textbf{Inductive step:}
   Show that
-  $$(\psi \land b \land \trans_\body(V,V') \land \neg b')
-  \Rightarrow \psi'$$
+  $$(\psi \land b \land \trans_\body(V,V') \land
+  \neg b') \Longrightarrow  \psi'$$
   is valid.
   In other words, assuming the program starts
-  in a state satisfying the postcondition,
+  in a state satisfying the postcondition if the loop has terminated,
   then executing the loop once should maintain
   that the program still satisfies the postcondition.
 \end{enumerate}
@@ -417,7 +419,7 @@ is valid.
 \begin{example}
   Consider the following Hoare triple:
   \begin{align*}
-    &\{x > 0\} \\
+    &\{x \geq 0\} \\
     &\whilest ~ x > 0  ~ \dost\\
     &\ \ \ x \gets x - 1\\
     &\{x \geq 0\}
@@ -426,11 +428,10 @@ is valid.
 
 \begin{enumerate}
   \item \textbf{Base case:}
-  Since $P_\pre$ is the empty program, we get the following
+  We get the following
   formula:
-  $$(x>0 \land x = x' \land x' \leq 0) \Rightarrow x' \geq 0$$
-  This formula is (vacuously) valid,
-  as the program has to execute the loop at least once.
+  $$x \geq 0 \Rightarrow x \geq 0$$
+  This formula is trivially true.
 
   \item \textbf{Inductive step:}
   For the inductive step, we check that,
@@ -475,17 +476,17 @@ We can apply this idea to the proof of programs:
   \item \textbf{Base case:}
   Show that the following is valid:
   \begin{align*}
-    \bigwedge_{i=0}^{k-1} \left(\phi \land \enc_i(P) \Rightarrow \psi^{i+1}\right)
+    \bigwedge_{i=0}^{k-1} \left(\phi \land \trans_\body(V,V^1) \land \ldots \land \trans_\body(V^i,V^{i+1}) \Rightarrow \psi^{i+1}\right)
   \end{align*}
-  This shows that the program is correct for $0,\ldots,k-1$
+  This shows that the program is correct for $0,\ldots,k$
   loop iterations.
 
   \item \textbf{Inductive step:}
   Then, we show that the following formula is valid:
   \begin{align*}
-    (\bigwedge_{i=0}^{k-1}
+    \left[\bigwedge_{i=0}^{k-1}(
     \psi^{i} \land b^i \land  \trans_\body(V^i,V^{i+1}))
-    \land \neg b^{k} \Rightarrow \psi^k
+    \land \neg b^{k} \right] \Longrightarrow \psi^k
   \end{align*}
 \end{enumerate}
 Together these two cases ensure that the program
