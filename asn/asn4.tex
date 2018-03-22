@@ -1,0 +1,64 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{stmaryrd}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+\title{Assignment 4}
+
+\begin{document}
+\maketitle
+
+\section*{$k$-induction}
+In class and notes,\footnote{\url{https://github.com/barghouthi/cs704/blob/master/notes/transRelEnc.pdf}}
+ we discussed $k$-induction as a technique
+for proving validity of a Hoare triple.
+You are to implement the $k$-induction algorithm
+using the Z3 SMT solver.
+
+
+Your implementation should take a Hoare triple:
+$$\{\phi\}\ \texttt{while } b \texttt{ do } P_\emph{body}\  \{\psi\}$$
+Given a value $k \geq 1$,
+your implementation should perform
+$k$-induction, returning ``success'' if
+$k$-induction succeeds, and ``failure'' otherwise.
+
+\emph{Your implementation can take the program
+as two formulas}, $b$ and $\texttt{enc}(P_{\emph{body}})$.
+So you do not have to parse the program and encode automatically
+for this assignment.
+
+\begin{itemize}
+  \item It is highly recommend that you use the Python
+  API of the Z3 SMT solver (\url{github.com/Z3Prover/z3}).
+  Z3 has other language bindings, but Python is the easiest
+  to prototype with and will make you most productive.
+
+\item You are expected to \textbf{exhaustively comment your
+code} and describe what parts of $k$-induction you are implementing.
+
+\item You should encode three non-trivial Hoare triples.
+All examples you provide should be valid Hoare triples.
+One of the Hoare triples should require $k\geq2$
+for the induction to succeed.
+Explain the programs you provide.
+For the example where $k\geq 2$ is required, explain why
+$k=1$ is insufficient.
+It is OK for your examples to be hard-coded.
+
+\item Provide a transition system
+for which $k$-induction cannot prove correctness
+for any value of $k$. Argue why that is the case.
+\end{itemize}
+
+
+\end{document}
