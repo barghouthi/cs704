@@ -127,7 +127,7 @@ The following will be populated as the course progresses:
   * we will also cover k-induction, the subject of asn3, which is covered in Sec 8 of the [notes from last week](notes/transRelEnc.pdf)
   
 *Asn 3 due* /
-*Asn 4 out*
+*[Asn 4 out](asn/asn4.pdf)*
 <!--assignment 3 due-->
 <!--assignment 4 release-->
 
@@ -171,6 +171,7 @@ Assignments will be posted here:
 | [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
 | [asn2](asn/asn2.pdf)  | ~~Mar 1~~ Mar 8 |
 | [asn3](asn/asn3.pdf)  | Mar 22 |
+| [asn4](asn/asn4.pdf)  | Apr 17 |
 
 ## Evaluation
 Performance will be evaluated as follows:
