@@ -118,7 +118,7 @@ The following will be populated as the course progresses:
 
 
 
-#### 🔥Week 9 (Mar 19) Automated verification
+#### Week 9 (Mar 19) Automated verification
 * **Tue** Finding Hoare proofs with Horn clauses
   * [notes](notes/hornClauses.pdf)
  
@@ -134,14 +134,13 @@ The following will be populated as the course progresses:
 #### Week 10 (Mar 26) SPRING BREAK
 
 
-#### Week 11 (Apr 2) Automated verification continued
+#### Week 11 (Apr 2) 🔥 Automated verification continued
 * **Tue** Implementing a mini verifier
   * [code](code/z3/miniverif.py)
  
 * **Thu** Dealing with recursion
   * to be added
 
-*Deliverable 3 due*
 <!--assignment 4 due-->
 <!--assignment 5 release-->
 
@@ -150,8 +149,8 @@ The following will be populated as the course progresses:
 abstract interpretation
 -->
 *Asn 4 due* / 
-*Asn 5 released*
- 
+*Asn 5 released* / *Deliverable 3 due*
+
 #### Week 13 (Apr 16) Abstract Interpretation
 
 
