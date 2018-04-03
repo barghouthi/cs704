@@ -134,7 +134,7 @@ The following will be populated as the course progresses:
 #### Week 10 (Mar 26) SPRING BREAK
 
 
-#### Week 11 (Apr 2) 🔥 Automated verification continued
+####  🔥 Week 11 (Apr 2) Automated verification continued
 * **Tue** Implementing a mini verifier
   * [code](code/z3/miniverif.py)
  
