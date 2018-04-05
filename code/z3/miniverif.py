@@ -105,7 +105,7 @@ preds = [lock == 0, new == old]
 predsprime = map(lambda p: substitute(p,*varMap), preds)
 
 oldInv = False
-inv = booleanAbstract(init, preds)
+inv = init
 
 i = 0
 while not fixpoint(oldInv,inv):
@@ -124,3 +124,9 @@ if isValid(Implies(inv,post)):
     print ">>> SAFE\n\n"
 else:
     print ">>> MAYBE?!?!\n\n"
+
+
+###########################
+# interpolation
+
+print sequence_interpolant([And(x == 0,y==0,yp==y+1,xp==x+1), Not(Implies(yp==10,xp==10))])
