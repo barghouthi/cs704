@@ -479,7 +479,7 @@ We can apply this idea to the proof of programs:
     \phi &\Rightarrow \psi\\
     \phi \land b \land \trans(V,V^1) \land \neg b^1 &\Rightarrow \psi^1\\
     \ldots\\
-    \phi \land b \land \trans(V,V^1) \land \ldots \land b^{k-1} \land \trans(V^{k-1}, V^k) \land \neg b^{k} &\Rightarrow \psi^k
+    \phi \land b \land \trans(V,V^1) \land \ldots \land b^{k-2} \land \trans(V^{k-2}, V^{k-1}) \land \neg b^{k-1} &\Rightarrow \psi^{k-1}
   \end{align*}
   This shows that the program is correct for $0,\ldots,k$
   loop iterations.
