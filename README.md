@@ -134,7 +134,7 @@ The following will be populated as the course progresses:
 #### Week 10 (Mar 26) SPRING BREAK
 
 
-####  🔥 Week 11 (Apr 2) Automated verification continued
+####   Week 11 (Apr 2) Automated verification continued
 * **Tue** Implementing a mini verifier
   * [code](code/z3/miniverif.py)
  
@@ -144,10 +144,14 @@ The following will be populated as the course progresses:
 <!--assignment 4 due-->
 <!--assignment 5 release-->
 
-#### Week 12 (Apr 9) Handling concurrency
-<!--
-abstract interpretation
--->
+#### 🔥 Week 12 (Apr 9) Handling concurrency
+* **Tue** To understand concurrency proof rules, we begin with recurisve proofs
+  * [code](code/z3/mccarthy91.py)
+  * [notes](notes/hornClauses.pdf) see section on recursion (more details to be added)
+ 
+* **Thu** Rely-Guarantee Proofs
+  * to be added
+  
 *Asn 4 due* / 
 *Asn 5 released* / *Deliverable 3 due*
 
