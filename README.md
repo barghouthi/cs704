@@ -151,7 +151,7 @@ The following will be populated as the course progresses:
  
 * **Thu** Rely-Guarantee Proofs
   * notes to be added
-  * presentation and notes are based on the following papers by [Grebenschikov et al.] (https://www7.in.tum.de/~rybal/papers/2012-pldi-synthesizing-verifiers-from-proof-rules.pdf) and [Gupta et al.](https://www7.in.tum.de/~popeea/research/modular.popl11.pdf)
+  * presentation and notes are based on the following papers by [Grebenschikov et al.](https://www7.in.tum.de/~rybal/papers/2012-pldi-synthesizing-verifiers-from-proof-rules.pdf) and [Gupta et al.](https://www7.in.tum.de/~popeea/research/modular.popl11.pdf)
   
  *Deliverable 3 due*
 
