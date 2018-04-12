@@ -150,13 +150,14 @@ The following will be populated as the course progresses:
   * [notes](notes/hornClauses.pdf) see section on recursion (more details to be added)
  
 * **Thu** Rely-Guarantee Proofs
-  * to be added
+  * notes to be added
   
-*Asn 4 due* / 
-*Asn 5 released* / *Deliverable 3 due*
+ *Deliverable 3 due*
 
 #### Week 13 (Apr 16) Abstract Interpretation
 
+*Asn 4 due* / 
+*Asn 5 released* 
 
 #### Week 14 (Apr 23)
 * Class presentations will be held this week.
