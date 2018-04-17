@@ -157,6 +157,14 @@ The following will be populated as the course progresses:
 
 #### Week 13 (Apr 16) Abstract Interpretation
 
+* **Tue** Intro to Abstract Interpretation
+  * [notes](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/10.ABSTRACT-INTERPRETATION.html)
+  * More details in Ch. 4 of PA (see references). See also FRAP Ch. 7.
+ 
+* **Thu** Abstract interpretation of programs
+  * same as above
+
+  
 *Asn 4 due* / 
 *Asn 5 released* 
 
