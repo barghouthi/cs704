@@ -144,7 +144,7 @@ The following will be populated as the course progresses:
 <!--assignment 4 due-->
 <!--assignment 5 release-->
 
-#### 🔥 Week 12 (Apr 9) Handling concurrency
+####  Week 12 (Apr 9) Handling concurrency
 * **Tue** To understand concurrency proof rules, we begin with recurisve proofs
   * [code](code/z3/mccarthy91.py)
   * [notes](notes/hornClauses.pdf) see section on recursion (more details to be added)
@@ -155,7 +155,7 @@ The following will be populated as the course progresses:
   
  *Deliverable 3 due*
 
-#### Week 13 (Apr 16) Abstract Interpretation
+#### 🔥 Week 13 (Apr 16) Abstract Interpretation
 
 * **Tue** Intro to Abstract Interpretation
   * [notes](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/10.ABSTRACT-INTERPRETATION.html)
