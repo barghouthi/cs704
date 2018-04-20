@@ -369,6 +369,68 @@ or equal to 91, regardless of the output.
 \end{example}
 
 \section{Solving Constrained Horn Clauses}
-To be continued...
+We now discuss how to solve a set of Horn clauses $\clss$.
+First, we begin by showing how to compute the \emph{least fixpoint}---i.e., the smallest possible solution for the predicate symbols.
+This process may not terminate, and therefore we will then apply some approximation.
 
+\begin{enumerate}
+  \item
+  Initially, the solution for any predicate $r$ is set to $\false$;
+  we denote this by $\sol(r) = \false$.
+
+  \item Pick any clause in $\clss$ of the following form
+  $$\rel_1(\vec{v}_1) \land \rel_2(\vec{v}_2) \land \ldots \land \rel_{n-1}(\vec{v}_{n-1})
+  \land \varphi \Longrightarrow \rel_n(\vec{v}_n)$$
+  that is, the head of the clause is a predicate application.
+  Then, set $$\sol(r_n) = \sol(r_n) \lor
+  \exists V \ldotp \sol(\rel_1(\vec{v}_1)) \land \sol(\rel_2(\vec{v}_2)) \land \ldots \land \sol(\rel_{n-1}(\vec{v}_{n-1}))
+  \land \varphi$$
+  where $V$ is the set of all variables that are not in $\vec{v}_n$.
+
+  \item Repeat 2 until $\sol(r_i)$ reach a fixpoint.
+\end{enumerate}
+
+
+Once we've computed solutions for all $r_i$,
+we can check if the solution validates clauses whose head is an interpreted formula. If that's the case, then the clauses $\clss$ are satisfiable;
+otherwise, they are not.
+
+\paragraph{Predicate abstraction}
+The above process terminates assuming we're working with propositional logic;
+however, in general it may not terminate.
+The reason is that there may be infinitely many logically incomparable
+formulas added to the solution, never arriving at a fixpoint.
+To work around this, we can over-approximate the least fixpoint
+by fixing a finite language of possible solutions.
+We do this with predicate abstraction.
+
+We assume we are given a finite set of predicates $\preds$---atomic formulas of the form, e.g., $x > 0$.
+Given any formula $\varphi$, we can compute the strongest
+formula over $\preds$ that subsumes $\varphi$.
+There are two possibilities:
+
+\begin{itemize}
+  \item \textbf{Cartesian Abstraction}
+  computes the strongest formula without disjunctions.
+  It is defined as follows:
+  $$\cabs(\varphi) \triangleq \bigwedge \{p \mid \varphi \Rightarrow p, p \in \preds}\} \land \bigwedge \{\neg p \mid \varphi \Rightarrow \neg p, p \in \preds}\}$$
+
+  \item \textbf{Boolean Abstraction}
+  computes the strongest formula.
+  Let $X$ be the set of all formulas
+  of the form $(\neg) p_1 \land \ldots \land (\neg) p_n$,
+  where $\preds = \{p_1,\ldots,p_n\}$.
+  $$\babs(\varphi) \triangleq \bigvee \{\phi \mid \varphi \land \phi \text{ is SAT}\}$$
+\end{itemize}
+Both forms of predicate abstraction can result in finitely many formulas.
+Now we can replace step (2) in the fixpoint algorithm with the following:
+
+$$\sol(r_n) = \sol(r_n) \lor
+\babs(\exists V \ldotp \sol(\rel_1(\vec{v}_1)) \land \sol(\rel_2(\vec{v}_2)) \land \ldots \land \sol(\rel_{n-1}(\vec{v}_{n-1}))
+\land \varphi)$$
+
+This ensures that we reach a fixpoint in finitely many steps,
+as in every step we weaken $\sol(r_i)$ using one of finitely many formulas.
+However, if we find a solution that does not satisfy the clauses,
+that does not mean that the clauses are unsatisfiable.
 \end{document}
