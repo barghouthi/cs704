@@ -144,19 +144,29 @@ The following will be populated as the course progresses:
 <!--assignment 4 due-->
 <!--assignment 5 release-->
 
-#### 🔥 Week 12 (Apr 9) Handling concurrency
+####  Week 12 (Apr 9) Handling concurrency
 * **Tue** To understand concurrency proof rules, we begin with recurisve proofs
   * [code](code/z3/mccarthy91.py)
   * [notes](notes/hornClauses.pdf) see section on recursion (more details to be added)
  
 * **Thu** Rely-Guarantee Proofs
-  * to be added
+  * notes to be added
+  * presentation and notes are based on the following papers by [Grebenschikov et al.](https://www7.in.tum.de/~rybal/papers/2012-pldi-synthesizing-verifiers-from-proof-rules.pdf) and [Gupta et al.](https://www7.in.tum.de/~popeea/research/modular.popl11.pdf)
+  
+ *Deliverable 3 due*
+
+#### 🔥 Week 13 (Apr 16) Abstract Interpretation
+
+* **Tue** Intro to Abstract Interpretation
+  * [notes](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/10.ABSTRACT-INTERPRETATION.html)
+  * More details in Ch. 4 of PA (see references). See also FRAP Ch. 7.
+ 
+* **Thu** Abstract interpretation of programs
+  * same as above
+
   
 *Asn 4 due* / 
-*Asn 5 released* / *Deliverable 3 due*
-
-#### Week 13 (Apr 16) Abstract Interpretation
-
+*[Asn 5 released](asn/asn5.pdf)* 
 
 #### Week 14 (Apr 23)
 * Class presentations will be held this week.
@@ -174,6 +184,7 @@ Assignments will be posted here:
 | [asn2](asn/asn2.pdf)  | ~~Mar 1~~ Mar 8 |
 | [asn3](asn/asn3.pdf)  | Mar 22 |
 | [asn4](asn/asn4.pdf)  | Apr 17 |
+| [asn5](asn/asn5.pdf)  | May 3 |
 
 ## Evaluation
 Performance will be evaluated as follows:
