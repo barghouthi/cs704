@@ -12,6 +12,7 @@
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 
+\newcommand{\lang}{\mathcal{L}}
 \title{Assignment 5}
 
 \begin{document}
@@ -127,7 +128,7 @@ def p(x)
 %
 Given the above program, the static analyzer returns
 the set
-$$\{s \mid s[x] = c, s[y] = c + 1, c \in \mathds{R}\}$$
+$$\{s \mid s[x] = c, s[y] = c + 1, c \in \mathbb{R}\}$$
 In other words, it returns the set of all states $s$ where $y = x + 1$.
 
 \paragraph{Example 2}
@@ -230,8 +231,8 @@ between the complete lattices $(L,\sqsubseteq)$
 and $(M,\sqsubseteq)$ if and only if
 $\alpha:L \rightarrow M$ and $\gamma:M \rightarrow L$
 are monotone functions that satisfy the following conditions:
-$$\text{forall }~ l \in L \ldotp \gamma(\alpha(l)) \sqsupseteq l$$
-$$\text{forall }~ m \in M \ldotp \alpha(\gamma(m)) \sqsubseteq m$$
+$$\textrm{forall } l \in L \ldotp \gamma(\alpha(l)) \sqsupseteq l$$
+$$\textrm{forall } m \in M \ldotp \alpha(\gamma(m)) \sqsubseteq m$$
 where $\circ$ is function composition---that is,
 $\alpha \circ \gamma$ is the function that applies
 $\alpha$ \emph{to the result of} $\gamma$.
