@@ -138,7 +138,7 @@ The following will be populated as the course progresses:
 * **Tue** Implementing a mini verifier
   * [code](code/z3/miniverif.py)
  
-* **Thu** Dealing with recursion
+* **Thu** Boolean abstraction and predicate refinement
   * to be added
 
 <!--assignment 4 due-->
