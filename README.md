@@ -139,7 +139,7 @@ The following will be populated as the course progresses:
   * [code](code/z3/miniverif.py)
  
 * **Thu** Boolean abstraction and predicate refinement
-  * to be added
+  * [notes](notes/hornClauses.pdf) 
 
 <!--assignment 4 due-->
 <!--assignment 5 release-->
