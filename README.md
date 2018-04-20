@@ -166,7 +166,7 @@ The following will be populated as the course progresses:
 
   
 *Asn 4 due* / 
-*Asn 5 released* 
+*[Asn 5 released](asn/asn5.pdf)* 
 
 #### Week 14 (Apr 23)
 * Class presentations will be held this week.
@@ -184,6 +184,7 @@ Assignments will be posted here:
 | [asn2](asn/asn2.pdf)  | ~~Mar 1~~ Mar 8 |
 | [asn3](asn/asn3.pdf)  | Mar 22 |
 | [asn4](asn/asn4.pdf)  | Apr 17 |
+| [asn5](asn/asn5.pdf)  | May 3 |
 
 ## Evaluation
 Performance will be evaluated as follows:
