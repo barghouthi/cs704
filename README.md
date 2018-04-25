@@ -169,6 +169,10 @@ The following will be populated as the course progresses:
 *[Asn 5 released](asn/asn5.pdf)* 
 
 #### Week 14 (Apr 23)
+* **Tue** Hyperproperties: non-interference and side-channel leakage
+  * See [Kopf and Rybalchenko](http://software.imdea.org/~bkoepf/papers/sfm13.pdf)
+
+  
 * Class presentations will be held this week.
 #### Week 15 (Apr 30)
 * Class presentations will be held this week.
