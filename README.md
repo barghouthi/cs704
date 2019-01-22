@@ -31,6 +31,40 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
+#### Week 2 (Jan 29)
+
+#### Week 3 (Feb 5)
+
+#### Week 4 (Feb 12)
+
+#### Week 5 (Feb 19)
+
+#### Week 6 (Feb 26)
+
+#### Week 7 (March 5)
+
+#### Week 8 (March 12)
+
+#### Week 9 (March 19)
+
+#### Week 10 (March 26)
+
+#### Week 11 (April 2)
+
+#### Week 12 (April 9)
+
+#### Week 13 (April 16)
+
+#### Week 14 (April 23)
+
+#### Week 15 (April 30)
+
+
+
+
+
+
+
 ## Assignments
 Assignments will be posted here:
 
