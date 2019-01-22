@@ -32,16 +32,51 @@ The following will be populated as the course progresses:
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
 #### Week 2 (Jan 29)
+*Aws is at FAT**
 
-#### Week 3 (Feb 4)
+#### Week 3 (Feb 4) Programming constructs & fixpoints in lambda calculus
 
-#### Week 4 (Feb 11)
+* **Tue** Programming constructs in lambda calclus
+  * [notes](notes/cs704-lec-01-29-2010.pdf)
+  * Ch. 5 of TAPL 
 
-#### Week 5 (Feb 18)
+* **Thu**  Fixpoints in lambda calculus
+  * [notes](notes/cs704-lec-01-29-2010.pdf) (same as Tue)
+  * [code from class](code/fixpoint_combinators.py)
+  *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
+        (See Might's other lambda calculus posts too.)
+        
 
-#### Week 6 (Feb 25)
+#### Week 4 (Feb 11) Types
+* **Tue** Introduction to types
+  * Ch. 8 of TAPL
+  
+* **Thu** Simply typed lambda calculus	
+  * Ch. 9 of TAPL
+
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
+
+#### Week 5 (Feb 18) Type inference & polymorphism
+* **Tue** Type inference
+  * Ch. 22 of TAPL
+  
+* **Thu** System F 
+  * Ch. 23 of TAPL
+  
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
+
+#### Week 6 (Feb 25) Semantics
+* **Tue** Operational semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
+  
+  
+* **Thu** Axiomatic semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
+
+*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/"), which is freely available*
 
 #### Week 7 (March 4)
+*Aws is in Berkeley*
 
 #### Week 8 (March 11)
 
