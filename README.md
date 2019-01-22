@@ -1,5 +1,5 @@
 # 🔥 CS 704: Principles of Programming Languages 
-## (Spring 2019)
+# Spring 2019
 
 | τ | τ' |
 |-|-|
