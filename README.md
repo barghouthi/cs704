@@ -33,32 +33,34 @@ The following will be populated as the course progresses:
 
 #### Week 2 (Jan 29)
 
-#### Week 3 (Feb 5)
+#### Week 3 (Feb 4)
 
-#### Week 4 (Feb 12)
+#### Week 4 (Feb 11)
 
-#### Week 5 (Feb 19)
+#### Week 5 (Feb 18)
 
-#### Week 6 (Feb 26)
+#### Week 6 (Feb 25)
 
-#### Week 7 (March 5)
+#### Week 7 (March 4)
 
-#### Week 8 (March 12)
+#### Week 8 (March 11)
 
-#### Week 9 (March 19)
+#### Week 9 (March 18)
+*spring break*
 
-#### Week 10 (March 26)
+#### Week 10 (March 25)
 
-#### Week 11 (April 2)
+#### Week 11 (April 1)
 
-#### Week 12 (April 9)
+#### Week 12 (April 8)
 
-#### Week 13 (April 16)
+#### Week 13 (April 15)
 
-#### Week 14 (April 23)
+#### Week 14 (April 22)
+*project presentations*
 
-#### Week 15 (April 30)
-
+#### Week 15 (April 29)
+*project presentations*
 
 
 
