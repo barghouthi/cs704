@@ -73,7 +73,7 @@ The following will be populated as the course progresses:
 * **Thu** Axiomatic semantics
   * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
 
-*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/"), which is freely available*
+*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/), which is freely available*
 
 #### Week 7 (March 4)
 *Aws is at the Simons Institute in Berkeley*
