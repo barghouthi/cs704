@@ -33,7 +33,9 @@ The following will be populated as the course progresses:
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
 #### Week 2 (Jan 29)
-*Aws is at FAT\* in Atlanta*
+* **Tue** No class - *Aws is at FAT\* in Atlanta* 
+
+* **Thu** Calvin Smith, our resident OCaml hacker, will give an excellent crash course in OCaml programming
 
 #### Week 3 (Feb 4) Programming constructs & fixpoints in lambda calculus
 
