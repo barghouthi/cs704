@@ -12,6 +12,8 @@ All notes and assignments wil be posted on this website.
 
 Submission of assignments and course project deliverables is via [canvas](https://canvas.wisc.edu/courses/127564).
 
+Anonymous feedback can be submitted on this [Google form](https://goo.gl/forms/UsfJOK4TetQU0zYp1)
+
 ## Course description
 This course covers a range of topics in programming languages, including lambda calculus and type theory, functional programming, logics for encoding programs, and automated verification techniques.
 
