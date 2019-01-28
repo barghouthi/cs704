@@ -147,7 +147,7 @@ List the tasks, broken down into two or three milestones
 
 * 10%: **Deliverable 4 (last 2 weeks of class)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
-* 35%: **Deliverable 5 (May 10)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
+* 35%: **Deliverable 5 (May 10)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 8-10 pages of [ACM SIGPLAN's double-column conference format](http://www.sigplan.org/Resources/Author/). 
 
 ## Resources
 There are no required textbooks for this class. The following is a list of books that should be  useful references for different parts of the course.
@@ -159,6 +159,10 @@ This is an excellent reference for our lambda calculus and types material
 This is a free and excellent book that covers most material we cover in 704
 
 * [FRAP] Chlipala <a href="http://adam.chlipala.net/frap/">Formal Reasoning About Programs</a>
+
+This is a fantastic (I think it's the best) book on static program analysis
+
+* [SPA] Møller and Schwartzbach [Static Program Analysis](https://cs.au.dk/~amoeller/spa/)
 
 
 This book talks about decision procedures
