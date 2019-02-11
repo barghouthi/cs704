@@ -6,7 +6,7 @@
 |When | Tu/Th 230-345 |
 |Where | CS 1257 |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
-|Office hours | Tue 100-200 in CS 6363 |
+|Office hours | Fri 230-330 in CS 6363 |
 
 All notes and assignments wil be posted on this website. 
 
