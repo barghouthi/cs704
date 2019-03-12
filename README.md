@@ -84,6 +84,14 @@ The following will be populated as the course progresses:
 *Aws is at the Simons Institute in Berkeley*
 
 #### Week 8 (March 11)
+* **Tue** Propositional logic and SAT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
+  
+  
+* **Thu** First-order logic and SMT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture6-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture7-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture10-6up.pdf)
+
+*For more references, consult Bradley and Manna's book [CofC]—see references below*
 
 #### Week 9 (March 18)
 *spring break*
