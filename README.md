@@ -96,7 +96,15 @@ The following will be populated as the course progresses:
 #### Week 9 (March 18)
 *spring break*
 
-#### Week 10 (March 25)
+#### Week 10 (March 25) Transition systems & program encodings
+
+* **Tue** Bounded encodings
+  * [notes](notes/transRelEnc.pdf)
+ 
+* **Thu** Bounded encodings and Z3 tutorial
+  * same notes as Tue
+  * [code from lecture](code/z3/z3tut.py)
+
 
 #### Week 11 (April 1)
 
