@@ -106,7 +106,14 @@ The following will be populated as the course progresses:
   * [code from lecture](code/z3/z3tut.py)
 
 
-#### Week 11 (April 1)
+#### Week 11 (April 1) Automated verification
+* **Tue** Finding Hoare proofs with Horn clauses
+  * [notes](notes/hornClauses.pdf)
+  * we will also cover k-induction, the subject of asn4, which is covered in Sec 8 of the [notes from last week](notes/transRelEnc.pdf)
+ 
+* **Thu** Automatically solving Horn clauses / intro to assignment 4
+  * same notes as Tue
+
 
 #### Week 12 (April 8)
 
