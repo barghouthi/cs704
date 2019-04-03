@@ -404,8 +404,7 @@ as follows:
 
   \item \textbf{Inductive step:}
   Show that
-  $$(\psi \land b \land \trans_\body(V,V') \land
-  \neg b') \Longrightarrow  \psi'$$
+  $$(\psi \land b \land \trans_\body(V,V')) \Longrightarrow  \psi'$$
   is valid.
   In other words, assuming the program starts
   in a state satisfying the postcondition if the loop has terminated,
@@ -440,7 +439,7 @@ is valid.
   then executes one loop iteration,
   it ends in a state in the postcondition (assuming the loop terminates).
   This is encoded as follows:
-  $$(x \geq 0 \land x > 0 \land x' = x - 1 \land x' \leq 0) \Rightarrow x' \geq 0$$
+  $$(x \geq 0 \land x > 0 \land x' = x - 1) \Rightarrow x' \geq 0$$
   This formula is valid.
   \emph{Checking validity of this formula, effectively, checks that
   the postcondition is an inductive loop invariant.}
@@ -477,9 +476,9 @@ We can apply this idea to the proof of programs:
   Show that the following formulas are valid:
   \begin{align*}
     \phi &\Rightarrow \psi\\
-    \phi \land b \land \trans(V,V^1) \land \neg b^1 &\Rightarrow \psi^1\\
+    \phi \land b \land \trans(V,V^1) &\Rightarrow \psi^1\\
     \ldots\\
-    \phi \land b \land \trans(V,V^1) \land \ldots \land b^{k-1} \land \trans(V^{k-1}, V^k) \land \neg b^{k} &\Rightarrow \psi^k
+    \phi \land b \land \trans(V,V^1) \land \ldots \land b^{k-2} \land \trans(V^{k-2}, V^{k-1}) &\Rightarrow \psi^{k-1}
   \end{align*}
   This shows that the program is correct for $0,\ldots,k$
   loop iterations.
@@ -489,7 +488,7 @@ We can apply this idea to the proof of programs:
   \begin{align*}
     \left[\bigwedge_{i=0}^{k-1}(
     \psi^{i} \land b^i \land  \trans_\body(V^i,V^{i+1}))
-    \land \neg b^{k} \right] \Longrightarrow \psi^k
+    \right] \Longrightarrow \psi^k
   \end{align*}
 \end{enumerate}
 Together these two cases ensure that the program
