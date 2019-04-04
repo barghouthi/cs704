@@ -111,7 +111,7 @@ The following will be populated as the course progresses:
   * [notes](notes/hornClauses.pdf)
   * we will also cover k-induction, the subject of asn4, which is covered in Sec 8 of the [notes from last week](notes/transRelEnc.pdf)
  
-* **Thu** Automatically solving Horn clauses / intro to assignment 4
+* **Thu** Automatically solving Horn clauses
   * same notes as Tue
 
 
