@@ -115,7 +115,12 @@ The following will be populated as the course progresses:
   * same notes as Tue
 
 
-#### Week 12 (April 8)
+#### Week 12 (April 8) Automated verification continued
+* **Tue** Implementing a mini verifier
+  * [code](code/z3/miniverif.py)
+ 
+* **Thu** Boolean abstraction and predicate refinement
+  * [notes](notes/hornClauses.pdf) see last section
 
 #### Week 13 (April 15)
 
