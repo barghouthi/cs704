@@ -122,7 +122,13 @@ The following will be populated as the course progresses:
 * **Thu** Boolean abstraction and predicate refinement
   * [notes](notes/hornClauses.pdf) see last section
 
-#### Week 13 (April 15)
+#### Week 13 (April 15) Abstract interpretation
+
+* **Tue** Lattice theory and fixpoints
+  * Chapter 4 of SPA
+  
+* **Thu** Galois connections
+  * Chapter 10 of SPA
 
 #### Week 14 (April 22)
 *project presentations*
