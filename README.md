@@ -76,7 +76,7 @@ List the tasks, broken down into two or three milestones
 
 * 5%: **Deliverable 3 (Apr 10)** Submit a description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
 
-* 10%: **Deliverable 4 (last 2 weeks of class)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
+* 10%: **Deliverable 4 (last 2 weeks of class)** 10-15 minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
 * 35%: **Deliverable 5 (May 7)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 15-20 pages of [Single-colum Latex article](http://homepages.math.uic.edu/~bshipley/sample.short.tex). 
 
