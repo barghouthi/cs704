@@ -1,5 +1,4 @@
-# CS 704: Principles of Programming Languages 
-# Spring 2021
+# CS 704: Principles of Programming Languages | Spring 2021
 
 | τ | τ' |
 |-|-|
@@ -22,7 +21,7 @@ The goal is to expose students to a range of mathematical and practical tools fo
 ## Lectures
 The following will be populated as the course progresses:
 
-#### Week 1 (Jan 21) Lambda calculus
+#### Week 1 (Jan 18) Lambda calculus
 
 * **Tue** Welcome to the course / Intro to the beautiful lambda calculus
   * [notes](notes/cs704-lec-1-22-2010.pdf)
@@ -42,19 +41,10 @@ Assignments will be posted here:
 | Assignment | Due date |
 | - | - |
 | [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
-<<<<<<< HEAD
-| [asn2](asn/asn2.pdf)  | ~~Mar 1~~ Mar 8 |
-| [asn3](asn/asn3.pdf)  | Mar 22 |
-| [asn4](asn/asn4.pdf)  | Apr 17 |
-| [asn5](asn/asn5.pdf)  | May 3 |
-=======
-| [asn2](./asn/asn2.pdf)  | Mar 5 |
-| [asn3](./asn/asn3.pdf)  | Apr 1 |
-| [asn4](./asn/asn4.pdf)  | Apr 16 |
-| [asn5](./asn/asn5.pdf)  | May 3 |
+| [asn2]()  | Mar 8 |
+| [asn3]()  | Mar 22 |
+| [asn4]()  | Apr 17 |
 
-
->>>>>>> origin/s19
 
 ## Evaluation
 Performance will be evaluated as follows:
@@ -62,7 +52,7 @@ Performance will be evaluated as follows:
 | Task | X% |
 | - | - |
 | Research project | 45% |
-| Assignments (5) | 40%|
+| Assignments (4) | 40%|
 | Project presentation | 10% |
 | Class participation | 5% |
 
@@ -70,9 +60,9 @@ Performance will be evaluated as follows:
 ## Course Project
 For the final project, you can work on a problem of your choice with a partner or by yourself.
 
-* **Deliverable 1 (Feb ~~5~~ 10)**   Send me a list of three project ideas.
+* **Deliverable 1 (Feb 5)**   Send me a list of three project ideas.
 
-* 5%: **Deliverable 2 (Feb 26)**  Submit a 2-3 page proposal including the following:
+* 5%: **Deliverable 2 (Feb 20)**  Submit a 2-3 page proposal including the following:
 The statement of the problem to be investigated
 An explanation of why the problem is interesting
 A description of what you propose to do.
@@ -88,7 +78,7 @@ List the tasks, broken down into two or three milestones
 
 * 10%: **Deliverable 4 (last 2 weeks of class)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
-* 35%: **Deliverable 5 (May 10)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 8-10 pages of [ACM SIGPLAN's double-column conference format](http://www.sigplan.org/Resources/Author/). 
+* 35%: **Deliverable 5 (May 7)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 15-20 pages of [Single-colum Latex article](http://homepages.math.uic.edu/~bshipley/sample.short.tex). 
 
 ## Resources
 There are no required textbooks for this class. The following is a list of books that should be  useful references for different parts of the course.
