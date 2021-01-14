@@ -48,8 +48,9 @@ The following will be populated as the course progresses:
 ### Week 13 (Apr 5)
 ### Week 14 (Apr 12)
 ### Week 15 (Apr 19)
-**project presentations**
+*project presentations*
 ### Week 16 (Apr 26)
+*project presentations*
 
 
 ## Assignments
