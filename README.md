@@ -9,7 +9,7 @@
 
 All notes and assignments wil be posted on this website. 
 
-Submission of assignments and course project deliverables is via [canvas](https://canvas.wisc.edu/courses/127564).
+Submission of assignments and course project deliverables is via Canvas.
 
 Anonymous feedback can be submitted on this [Google form](https://goo.gl/forms/UsfJOK4TetQU0zYp1)
 
