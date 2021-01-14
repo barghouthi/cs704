@@ -22,7 +22,7 @@ The goal is to expose students to a range of mathematical and practical tools fo
 ## Lectures
 The following will be populated as the course progresses:
 
-####Week 1 (Jan 18) Lambda calculus
+#### Week 1 (Jan 18) Lambda calculus
 
 * **Tue** Welcome to the course / Intro to the beautiful lambda calculus
   * [notes](notes/cs704-lec-1-22-2010.pdf)
@@ -34,7 +34,7 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
-####Week 2 (Jan 25) Programming constructs & fixpoints in lambda calculus
+#### Week 2 (Jan 25) Programming constructs & fixpoints in lambda calculus
 * **Tue** Programming constructs in lambda calclus
   * [notes](notes/cs704-lec-01-29-2010.pdf)
   * Ch. 5 of TAPL 
@@ -47,21 +47,21 @@ The following will be populated as the course progresses:
 
 [*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
 
-####Week 3 (Feb 1)
-####Week 4 (Feb 8)
-####Week 5 (Feb 15)
-####Week 6 (Feb 22)
-####Week 7 (Feb 29)
-####Week 8 (Mar 1)
-####Week 9 (Mar 8)
-####Week 10 (Mar 15)
-####Week 11 (Mar 22)
-####Week 12 (Mar 29)
-####Week 13 (Apr 5)
-####Week 14 (Apr 12)
-####Week 15 (Apr 19)
+#### Week 3 (Feb 1)
+#### Week 4 (Feb 8)
+#### Week 5 (Feb 15)
+#### Week 6 (Feb 22)
+#### Week 7 (Feb 29)
+#### Week 8 (Mar 1)
+#### Week 9 (Mar 8)
+#### Week 10 (Mar 15)
+#### Week 11 (Mar 22)
+#### Week 12 (Mar 29)
+#### Week 13 (Apr 5)
+#### Week 14 (Apr 12)
+#### Week 15 (Apr 19)
 *project presentations*
-####Week 16 (Apr 26)
+#### Week 16 (Apr 26)
 *project presentations*
 
 
