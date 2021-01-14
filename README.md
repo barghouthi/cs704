@@ -1,15 +1,22 @@
+<<<<<<< HEAD
 # (OLD) CS 704: Principles of Programming Languages (Spring 2018)
+=======
+# (OLD) CS 704: Principles of Programming Languages 
+# Spring 2019
+>>>>>>> origin/s19
 
 | τ | τ' |
 |-|-|
 |When | Tu/Th 230-345 |
-|Where | CS 1325 |
+|Where | CS 1257 |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
-|Office hours | Tue 100-200 in CS 6363 |
+|Office hours | Fri 230-330 in CS 6363 |
 
 All notes and assignments wil be posted on this website. 
 
-Submission of assignments and course project deliverables is via [canvas](https://canvas.wisc.edu/courses/77585).
+Submission of assignments and course project deliverables is via [canvas](https://canvas.wisc.edu/courses/127564).
+
+Anonymous feedback can be submitted on this [Google form](https://goo.gl/forms/UsfJOK4TetQU0zYp1)
 
 ## Course description
 This course covers a range of topics in programming languages, including lambda calculus and type theory, functional programming, logics for encoding programs, and automated verification techniques.
@@ -19,7 +26,7 @@ The goal is to expose students to a range of mathematical and practical tools fo
 ## Lectures
 The following will be populated as the course progresses:
 
-#### Week 1 (Jan 22) Lambda calculus
+#### Week 1 (Jan 21) Lambda calculus
 
 * **Tue** Welcome to the course / Intro to the beautiful lambda calculus
   * [notes](notes/cs704-lec-1-22-2010.pdf)
@@ -31,7 +38,13 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
-#### Week 2 (Jan 29) Programming constructs & fixpoints in lambda calculus
+#### Week 2 (Jan 29)
+* **Tue** No class - *Aws is at FAT\* in Atlanta* 
+
+* **Thu** Calvin Smith, our resident OCaml hacker, will give an excellent crash course in OCaml programming
+
+#### Week 3 (Feb 4) Programming constructs & fixpoints in lambda calculus
+
 * **Tue** Programming constructs in lambda calclus
   * [notes](notes/cs704-lec-01-29-2010.pdf)
   * Ch. 5 of TAPL 
@@ -41,20 +54,9 @@ The following will be populated as the course progresses:
   * [code from class](code/fixpoint_combinators.py)
   *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
         (See Might's other lambda calculus posts too.)
+        
 
-[*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
-<!--assignment 1 release-->
-
-#### Week 3 (Feb 5) The Church–Rosser theorem / FP
-* **Tue** Deep dive into functional programming
-  * *no notes—tonnes of online tutorials*
- 
-* **Thu** The Church–Rosser theorem
-  * [notes](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/1.LAMBDA-CALCULUS.html#churchRosser)
-
-*Deliverable 1 due*
-
-#### Week 4 (Feb 12) Types
+#### Week 4 (Feb 11) Types
 * **Tue** Introduction to types
   * Ch. 8 of TAPL
   
@@ -63,23 +65,16 @@ The following will be populated as the course progresses:
 
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
 
-*Asn 1 due* /
-[*Asn 2 out*](asn/asn2.pdf)
-
-
-<!--assignment 1 due-->
-<!--assignment 2 release-->
-
-#### Week 5 (Feb 19) Type inference & polymorphism
+#### Week 5 (Feb 18) Type inference & polymorphism
 * **Tue** Type inference
   * Ch. 22 of TAPL
   
-* **Thu** System F **cancelled due to baby**
-  * Ch. 23 of TAPL
+* **Thu** Types for an imperative language
+  * Ch. 2 of SPA (Ch. 1 has language definition)
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
-####  Week 6 (Feb 26) Semantics
+#### Week 6 (Feb 25) Semantics
 * **Tue** Operational semantics
   * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
   
@@ -87,13 +82,12 @@ The following will be populated as the course progresses:
 * **Thu** Axiomatic semantics
   * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
 
-*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/"), which is freely available*
+*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/), which is freely available*
 
+#### Week 7 (March 4)
+*Aws is at the Simons Institute in Berkeley*
 
-<!--assignment 2 due-->
-<!--assignment 3 release-->
-
-####  Week 7 (Mar 5) Logic & SAT/SMT
+#### Week 8 (March 11)
 * **Tue** Propositional logic and SAT solvers
   * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
   
@@ -103,11 +97,10 @@ The following will be populated as the course progresses:
 
 *For more references, consult Bradley and Manna's book [CofC]—see references below*
 
-*Asn 2 due* /
-*Deliverable 2 due* /
-*[Asn 3 out](asn/asn3.pdf)*
+#### Week 9 (March 18)
+*spring break*
 
-####  Week 8 (Mar 12) Transition systems & program encodings
+#### Week 10 (March 25) Transition systems & program encodings
 
 * **Tue** Bounded encodings
   * [notes](notes/transRelEnc.pdf)
@@ -117,33 +110,45 @@ The following will be populated as the course progresses:
   * [code from lecture](code/z3/z3tut.py)
 
 
-
-#### Week 9 (Mar 19) Automated verification
+#### Week 11 (April 1) Automated verification
 * **Tue** Finding Hoare proofs with Horn clauses
   * [notes](notes/hornClauses.pdf)
+  * we will also cover k-induction, the subject of asn4, which is covered in Sec 8 of the [notes from last week](notes/transRelEnc.pdf)
  
-* **Thu** Automatically solving Horn clauses / intro to assignment 4
+* **Thu** Automatically solving Horn clauses
   * same notes as Tue
-  * we will also cover k-induction, the subject of asn3, which is covered in Sec 8 of the [notes from last week](notes/transRelEnc.pdf)
-  
-*Asn 3 due* /
-*[Asn 4 out](asn/asn4.pdf)*
-<!--assignment 3 due-->
-<!--assignment 4 release-->
-
-#### Week 10 (Mar 26) SPRING BREAK
 
 
+<<<<<<< HEAD
 ####   Week 11 (Apr 2) Automated verification continued
+=======
+#### Week 12 (April 8) Automated verification continued
+>>>>>>> origin/s19
 * **Tue** Implementing a mini verifier
   * [code](code/z3/miniverif.py)
  
 * **Thu** Boolean abstraction and predicate refinement
   * [notes](notes/hornClauses.pdf) see last section
+<<<<<<< HEAD
+=======
 
-<!--assignment 4 due-->
-<!--assignment 5 release-->
+#### Week 13 (April 15) Abstract interpretation
 
+* **Tue** Lattice theory and fixpoints
+  * Chapter 4 of SPA
+  
+* **Thu** Galois connections
+  * Chapter 10 of SPA
+
+#### Week 14 (April 22)
+*project presentations*
+
+#### Week 15 (April 29)
+*project presentations*
+>>>>>>> origin/s19
+
+
+<<<<<<< HEAD
 ####  Week 12 (Apr 9) Handling concurrency
 * **Tue** To understand concurrency proof rules, we begin with recurisve proofs
   * [code](code/z3/mccarthy91.py)
@@ -156,6 +161,9 @@ The following will be populated as the course progresses:
  *Deliverable 3 due*
 
 #### 🔥 Week 13 (Apr 16) Abstract Interpretation
+=======
+
+>>>>>>> origin/s19
 
 * **Tue** Intro to Abstract Interpretation
   * [notes](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/10.ABSTRACT-INTERPRETATION.html)
@@ -168,6 +176,7 @@ The following will be populated as the course progresses:
 *Asn 4 due* / 
 *[Asn 5 released](asn/asn5.pdf)* 
 
+<<<<<<< HEAD
 #### Week 14 (Apr 23)
 * **Tue** Hyperproperties: non-interference and side-channel leakage
   * See [Kopf and Rybalchenko](http://software.imdea.org/~bkoepf/papers/sfm13.pdf)
@@ -176,19 +185,28 @@ The following will be populated as the course progresses:
 * Class presentations will be held this week.
 #### Week 15 (Apr 30)
 * Class presentations will be held this week.
+=======
+>>>>>>> origin/s19
 
-*Asn 5 due* /
-*Deliverable 5 is due May 11*
 ## Assignments
 Assignments will be posted here:
 
 | Assignment | Due date |
 | - | - |
 | [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
+<<<<<<< HEAD
 | [asn2](asn/asn2.pdf)  | ~~Mar 1~~ Mar 8 |
 | [asn3](asn/asn3.pdf)  | Mar 22 |
 | [asn4](asn/asn4.pdf)  | Apr 17 |
 | [asn5](asn/asn5.pdf)  | May 3 |
+=======
+| [asn2](./asn/asn2.pdf)  | Mar 5 |
+| [asn3](./asn/asn3.pdf)  | Apr 1 |
+| [asn4](./asn/asn4.pdf)  | Apr 16 |
+| [asn5](./asn/asn5.pdf)  | May 3 |
+
+
+>>>>>>> origin/s19
 
 ## Evaluation
 Performance will be evaluated as follows:
@@ -204,7 +222,7 @@ Performance will be evaluated as follows:
 ## Course Project
 For the final project, you can work on a problem of your choice with a partner or by yourself.
 
-* **Deliverable 1 (Feb 5)**   Send me a list of three project ideas.
+* **Deliverable 1 (Feb ~~5~~ 10)**   Send me a list of three project ideas.
 
 * 5%: **Deliverable 2 (Feb 26)**  Submit a 2-3 page proposal including the following:
 The statement of the problem to be investigated
@@ -218,11 +236,11 @@ Complete the following sentence: "The experiments were designed to shed light on
 Then explain what you plan to measure; how you will measure it (if it is not obvious); and where you will obtain test cases.
 List the tasks, broken down into two or three milestones
 
-* 5%: **Deliverable 3 (Apr 12)** Submit a description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
+* 5%: **Deliverable 3 (Apr 10)** Submit a description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
 
 * 10%: **Deliverable 4 (last 2 weeks of class)** 10-minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
-* 35%: **Deliverable 5 (May 11)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 6-10 pages of ACM's double-column conference formats. 
+* 35%: **Deliverable 5 (May 10)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 8-10 pages of [ACM SIGPLAN's double-column conference format](http://www.sigplan.org/Resources/Author/). 
 
 ## Resources
 There are no required textbooks for this class. The following is a list of books that should be  useful references for different parts of the course.
@@ -234,6 +252,10 @@ This is an excellent reference for our lambda calculus and types material
 This is a free and excellent book that covers most material we cover in 704
 
 * [FRAP] Chlipala <a href="http://adam.chlipala.net/frap/">Formal Reasoning About Programs</a>
+
+This is a fantastic (I think it's the best) book on static program analysis
+
+* [SPA] Møller and Schwartzbach [Static Program Analysis](https://cs.au.dk/~amoeller/spa/)
 
 
 This book talks about decision procedures
