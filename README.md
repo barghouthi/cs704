@@ -1,16 +1,12 @@
-<<<<<<< HEAD
-# (OLD) CS 704: Principles of Programming Languages (Spring 2018)
-=======
-# (OLD) CS 704: Principles of Programming Languages 
-# Spring 2019
->>>>>>> origin/s19
+# CS 704: Principles of Programming Languages 
+# Spring 2021
 
 | τ | τ' |
 |-|-|
-|When | Tu/Th 230-345 |
-|Where | CS 1257 |
+|When | Tu/Th 1-2:15 |
+|Where | Online (BB Ultra via Canvas) |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
-|Office hours | Fri 230-330 in CS 6363 |
+|Office hours | Thu 215-300 in CS 6363 |
 
 All notes and assignments wil be posted on this website. 
 
@@ -38,155 +34,7 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
-#### Week 2 (Jan 29)
-* **Tue** No class - *Aws is at FAT\* in Atlanta* 
 
-* **Thu** Calvin Smith, our resident OCaml hacker, will give an excellent crash course in OCaml programming
-
-#### Week 3 (Feb 4) Programming constructs & fixpoints in lambda calculus
-
-* **Tue** Programming constructs in lambda calclus
-  * [notes](notes/cs704-lec-01-29-2010.pdf)
-  * Ch. 5 of TAPL 
-
-* **Thu**  Fixpoints in lambda calculus
-  * [notes](notes/cs704-lec-01-29-2010.pdf) (same as Tue)
-  * [code from class](code/fixpoint_combinators.py)
-  *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
-        (See Might's other lambda calculus posts too.)
-        
-
-#### Week 4 (Feb 11) Types
-* **Tue** Introduction to types
-  * Ch. 8 of TAPL
-  
-* **Thu** Simply typed lambda calculus	
-  * Ch. 9 of TAPL
-
-*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
-
-#### Week 5 (Feb 18) Type inference & polymorphism
-* **Tue** Type inference
-  * Ch. 22 of TAPL
-  
-* **Thu** Types for an imperative language
-  * Ch. 2 of SPA (Ch. 1 has language definition)
-  
-*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
-
-#### Week 6 (Feb 25) Semantics
-* **Tue** Operational semantics
-  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
-  
-  
-* **Thu** Axiomatic semantics
-  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
-
-*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/), which is freely available*
-
-#### Week 7 (March 4)
-*Aws is at the Simons Institute in Berkeley*
-
-#### Week 8 (March 11)
-* **Tue** Propositional logic and SAT solvers
-  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
-  
-  
-* **Thu** First-order logic and SMT solvers
-  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture6-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture7-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture10-6up.pdf)
-
-*For more references, consult Bradley and Manna's book [CofC]—see references below*
-
-#### Week 9 (March 18)
-*spring break*
-
-#### Week 10 (March 25) Transition systems & program encodings
-
-* **Tue** Bounded encodings
-  * [notes](notes/transRelEnc.pdf)
- 
-* **Thu** Bounded encodings and Z3 tutorial
-  * same notes as Tue
-  * [code from lecture](code/z3/z3tut.py)
-
-
-#### Week 11 (April 1) Automated verification
-* **Tue** Finding Hoare proofs with Horn clauses
-  * [notes](notes/hornClauses.pdf)
-  * we will also cover k-induction, the subject of asn4, which is covered in Sec 8 of the [notes from last week](notes/transRelEnc.pdf)
- 
-* **Thu** Automatically solving Horn clauses
-  * same notes as Tue
-
-
-<<<<<<< HEAD
-####   Week 11 (Apr 2) Automated verification continued
-=======
-#### Week 12 (April 8) Automated verification continued
->>>>>>> origin/s19
-* **Tue** Implementing a mini verifier
-  * [code](code/z3/miniverif.py)
- 
-* **Thu** Boolean abstraction and predicate refinement
-  * [notes](notes/hornClauses.pdf) see last section
-<<<<<<< HEAD
-=======
-
-#### Week 13 (April 15) Abstract interpretation
-
-* **Tue** Lattice theory and fixpoints
-  * Chapter 4 of SPA
-  
-* **Thu** Galois connections
-  * Chapter 10 of SPA
-
-#### Week 14 (April 22)
-*project presentations*
-
-#### Week 15 (April 29)
-*project presentations*
->>>>>>> origin/s19
-
-
-<<<<<<< HEAD
-####  Week 12 (Apr 9) Handling concurrency
-* **Tue** To understand concurrency proof rules, we begin with recurisve proofs
-  * [code](code/z3/mccarthy91.py)
-  * [notes](notes/hornClauses.pdf) see section on recursion (more details to be added)
- 
-* **Thu** Rely-Guarantee Proofs
-  * notes to be added
-  * presentation and notes are based on the following papers by [Grebenschikov et al.](https://www7.in.tum.de/~rybal/papers/2012-pldi-synthesizing-verifiers-from-proof-rules.pdf) and [Gupta et al.](https://www7.in.tum.de/~popeea/research/modular.popl11.pdf)
-  
- *Deliverable 3 due*
-
-#### 🔥 Week 13 (Apr 16) Abstract Interpretation
-=======
-
->>>>>>> origin/s19
-
-* **Tue** Intro to Abstract Interpretation
-  * [notes](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/10.ABSTRACT-INTERPRETATION.html)
-  * More details in Ch. 4 of PA (see references). See also FRAP Ch. 7.
- 
-* **Thu** Abstract interpretation of programs
-  * same as above
-
-  
-*Asn 4 due* / 
-*[Asn 5 released](asn/asn5.pdf)* 
-
-<<<<<<< HEAD
-#### Week 14 (Apr 23)
-* **Tue** Hyperproperties: non-interference and side-channel leakage
-  * See [Kopf and Rybalchenko](http://software.imdea.org/~bkoepf/papers/sfm13.pdf)
-
-  
-* Class presentations will be held this week.
-#### Week 15 (Apr 30)
-* Class presentations will be held this week.
-=======
->>>>>>> origin/s19
 
 ## Assignments
 Assignments will be posted here:
