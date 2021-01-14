@@ -22,7 +22,7 @@ The goal is to expose students to a range of mathematical and practical tools fo
 ## Lectures
 The following will be populated as the course progresses:
 
-#### Week 1 (Jan 18) Lambda calculus
+### Week 1 (Jan 18) Lambda calculus
 
 * **Tue** Welcome to the course / Intro to the beautiful lambda calculus
   * [notes](notes/cs704-lec-1-22-2010.pdf)
