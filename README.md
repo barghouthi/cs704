@@ -47,18 +47,18 @@ The following will be populated as the course progresses:
 
 [*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
 
-#### Week 3 (Feb 1)
-#### Week 4 (Feb 8)
-#### Week 5 (Feb 15)
-#### Week 6 (Feb 22)
-#### Week 7 (Feb 29)
-#### Week 8 (Mar 1)
-#### Week 9 (Mar 8)
-#### Week 10 (Mar 15)
-#### Week 11 (Mar 22)
-#### Week 12 (Mar 29)
-#### Week 13 (Apr 5)
-#### Week 14 (Apr 12)
+#### Week 3 (Feb 1) Types
+#### Week 4 (Feb 8) Type inference
+#### Week 5 (Feb 15) Semantics
+#### Week 6 (Feb 22) Logic & SAT/SMT
+#### Week 7 (Feb 29) Transition systems & program encodings
+#### Week 8 (Mar 1) Automated verification
+#### Week 9 (Mar 8) Automated verification continued
+#### Week 10 (Mar 15) Abstract interpretation
+#### Week 11 (Mar 22) Applications of abstract interpretation
+#### Week 12 (Mar 29) Applications of abstract interpretation (continued)
+#### Week 13 (Apr 5) Verifying quantum circuits
+#### Week 14 (Apr 12) Verifying quantum circuits (continued)
 #### Week 15 (Apr 19)
 *project presentations*
 #### Week 16 (Apr 26)
