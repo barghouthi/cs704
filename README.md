@@ -1,5 +1,5 @@
 #  Principles of Programming Languages
-CS 704 | Spring 2021
+## CS 704 | Spring 2021
 
 | τ | τ' |
 |-|-|
