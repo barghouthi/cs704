@@ -22,7 +22,7 @@ The goal is to expose students to a range of mathematical and practical tools fo
 ## Lectures
 The following will be populated as the course progresses:
 
-#### Week 1 (Jan 18) Lambda calculus
+#### Week 1 (Jan 25) Lambda calculus
 
 * **Tue** Welcome to the course / Intro to the beautiful lambda calculus
   * [notes](notes/cs704-lec-1-22-2010.pdf)
@@ -34,7 +34,7 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
-#### Week 2 (Jan 25) Programming constructs & fixpoints in lambda calculus
+#### Week 2 (Feb 1) Programming constructs & fixpoints in lambda calculus
 * **Tue** Programming constructs in lambda calclus
   * [notes](notes/cs704-lec-01-29-2010.pdf)
   * Ch. 5 of TAPL 
@@ -47,21 +47,20 @@ The following will be populated as the course progresses:
 
 [*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
 
-#### Week 3 (Feb 1) Types
-#### Week 4 (Feb 8) Type inference
-#### Week 5 (Feb 15) Semantics
-#### Week 6 (Feb 22) Logic & SAT/SMT
-#### Week 7 (Feb 29) Transition systems & program encodings
-#### Week 8 (Mar 1) Automated verification
-#### Week 9 (Mar 8) Automated verification continued
-#### Week 10 (Mar 15) Abstract interpretation
-#### Week 11 (Mar 22) Applications of abstract interpretation
-#### Week 12 (Mar 29) Applications of abstract interpretation (continued)
-#### Week 13 (Apr 5) Verifying quantum circuits
-#### Week 14 (Apr 12) Verifying quantum circuits (continued)
-#### Week 15 (Apr 19)
+#### Week 3 (Feb 8) Types
+#### Week 4 (Feb 15) Type inference
+#### Week 5 (Feb 22) Semantics
+#### Week 6 (Feb 29) Logic & SAT/SMT
+#### Week 7 (Mar 1) Transition systems & program encodings
+#### Week 8 (Mar 8) Automated verification
+#### Week 9 (Mar 15) Automated verification continued
+#### Week 10 (Mar 22) Abstract interpretation
+#### Week 11 (Mar 29) Applications of abstract interpretation
+#### Week 12 (Apr 5) Applications of abstract interpretation (continued)
+#### Week 13 (Apr 12) Verifying quantum circuits
+#### Week 14 (Apr 19) 
 *project presentations*
-#### Week 16 (Apr 26)
+#### Week 15 (Apr 26)
 *project presentations*
 
 
