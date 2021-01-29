@@ -4,7 +4,7 @@
 | τ | τ' |
 |-|-|
 |When | Tu/Th 1-2:15 |
-|Where | Online (BB Ultra via Canvas) |
+|Where | Online (Zoom via Canvas) |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
 |Office hours | Thu 215-300 in CS 6363 |
 
