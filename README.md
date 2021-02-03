@@ -43,7 +43,7 @@ The following will be populated as the course progresses:
 
 [*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
 
-#### Week 3 (Feb 8) Types
+#### Week 3 (Feb 8) Fixpoints and project ideas
 * **Tue**  Fixpoints in lambda calculus
   * [notes](notes/cs704-lec-01-29-2010.pdf) (same as Tue)
   * [code from class](code/fixpoint_combinators.py)
