@@ -39,15 +39,19 @@ The following will be populated as the course progresses:
   * [notes](notes/cs704-lec-01-29-2010.pdf)
   * Ch. 5 of TAPL 
 
-* **Thu**  Fixpoints in lambda calculus
+* **Thu**  OCaml tutorial
+
+[*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
+
+#### Week 3 (Feb 8) Types
+* **Tue**  Fixpoints in lambda calculus
   * [notes](notes/cs704-lec-01-29-2010.pdf) (same as Tue)
   * [code from class](code/fixpoint_combinators.py)
   *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
         (See Might's other lambda calculus posts too.)
 
-[*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
-
-#### Week 3 (Feb 8) Types
+* **Thu** Project ideas individual meetings
+        
 #### Week 4 (Feb 15) Type inference
 #### Week 5 (Feb 22) Semantics
 #### Week 6 (Feb 29) Logic & SAT/SMT
