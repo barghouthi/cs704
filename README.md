@@ -49,7 +49,8 @@ The following will be populated as the course progresses:
   * [code from class](code/fixpoint_combinators.py)
   *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
         (See Might's other lambda calculus posts too.)
-
+ * See [this nice blog post on deriving the Y combinator](https://invenia.github.io/blog/2018/08/20/ycombinator/)
+ 
 * **Thu** Project ideas individual meetings
         
 #### Week 4 (Feb 15) Type inference
