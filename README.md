@@ -53,16 +53,32 @@ The following will be populated as the course progresses:
  
 * **Thu** Project ideas individual meetings
         
-#### Week 4 (Feb 15) Type inference
-#### Week 5 (Feb 22) Semantics
-#### Week 6 (Feb 29) Logic & SAT/SMT
-#### Week 7 (Mar 1) Transition systems & program encodings
-#### Week 8 (Mar 8) Automated verification
-#### Week 9 (Mar 15) Automated verification continued
-#### Week 10 (Mar 22) Abstract interpretation
-#### Week 11 (Mar 29) Applications of abstract interpretation
-#### Week 12 (Apr 5) Applications of abstract interpretation (continued)
-#### Week 13 (Apr 12) Verifying quantum circuits
+#### Week 4 (Feb 15) Types
+* **Tue** Introduction to types
+  * Ch. 8 of TAPL
+  
+* **Thu** Simply typed lambda calculus	
+  * Ch. 9 of TAPL
+
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
+
+#### Week 5 (Feb 22) Types continued
+* **Tue** Type inference
+  * Ch. 22 of TAPL
+  
+* **Thu** Types for an imperative language
+  * Ch. 2 of SPA (Ch. 1 has language definition)
+  
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
+
+#### Week 6 (Feb 29) Semantics
+#### Week 7 (Mar 1) Logic & SAT/SMT
+#### Week 8 (Mar 8) Transition systems & program encodings
+#### Week 9 (Mar 15) Automated verification
+#### Week 10 (Mar 22) Automated verification continued
+#### Week 11 (Mar 29) Abstract interpretation
+#### Week 12 (Apr 5) Applications of abstract interpretation
+#### Week 13 (Apr 12) Applications of abstract interpretation (continued)
 #### Week 14 (Apr 19) 
 *project presentations*
 #### Week 15 (Apr 26)
