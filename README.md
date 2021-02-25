@@ -67,7 +67,7 @@ The following will be populated as the course progresses:
   * Ch. 22 of TAPL
   
 * **Thu** Types for an imperative language
-  * Ch. 2 of SPA (Ch. 1 has language definition)
+  * Ch. 3 of SPA (Ch. 2 has language definition)
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
