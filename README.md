@@ -81,16 +81,16 @@ The following will be populated as the course progresses:
 
 *you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/), which is freely available*
 
-#### Week 7 (Mar 1) Logic & SAT/SMT
-#### Week 8 (Mar 8) Transition systems & program encodings
-#### Week 9 (Mar 15) Automated verification
-#### Week 10 (Mar 22) Automated verification continued
-#### Week 11 (Mar 29) Abstract interpretation
-#### Week 12 (Apr 5) Applications of abstract interpretation
-#### Week 13 (Apr 12) Applications of abstract interpretation (continued)
-#### Week 14 (Apr 19) 
+
+#### Week 7 (Mar 8) Logic & SAT/SMT
+#### Week 8 (Mar 15) Transition systems & program encodings 
+#### Week 9 (Mar 22) Automated verification 
+#### Week 10 (Mar 29) Automated verification continued
+#### Week 11 (Apr 5) Applications of abstract interpretation
+#### Week 12 (Apr 12) Applications of abstract interpretation (continued)
+#### Week 13 (Apr 19) 
 *project presentations*
-#### Week 15 (Apr 26)
+#### Week 14 (Apr 26)
 *project presentations*
 
 
