@@ -72,6 +72,15 @@ The following will be populated as the course progresses:
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
 #### Week 6 (Feb 29) Semantics
+* **Tue** Operational semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
+  
+  
+* **Thu** Axiomatic semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
+
+*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/), which is freely available*
+
 #### Week 7 (Mar 1) Logic & SAT/SMT
 #### Week 8 (Mar 8) Transition systems & program encodings
 #### Week 9 (Mar 15) Automated verification
