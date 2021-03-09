@@ -72,16 +72,35 @@ The following will be populated as the course progresses:
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
 #### Week 6 (Feb 29) Semantics
-#### Week 7 (Mar 1) Logic & SAT/SMT
-#### Week 8 (Mar 8) Transition systems & program encodings
-#### Week 9 (Mar 15) Automated verification
-#### Week 10 (Mar 22) Automated verification continued
-#### Week 11 (Mar 29) Abstract interpretation
-#### Week 12 (Apr 5) Applications of abstract interpretation
-#### Week 13 (Apr 12) Applications of abstract interpretation (continued)
-#### Week 14 (Apr 19) 
+* **Tue** Operational semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
+  
+  
+* **Thu** Axiomatic semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
+
+*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/), which is freely available*
+
+
+#### Week 7 (Mar 8) Logic & SAT/SMT
+
+* **Tue** Propositional logic and SAT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
+  
+  
+* **Thu** First-order logic and SMT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture6-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture7-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture10-6up.pdf)
+
+*For more references, consult Bradley and Manna's book [CofC]—see references below*
+
+#### Week 8 (Mar 15) Transition systems & program encodings 
+#### Week 9 (Mar 22) Automated verification 
+#### Week 10 (Mar 29) Automated verification continued
+#### Week 11 (Apr 5) Applications of abstract interpretation
+#### Week 12 (Apr 12) Applications of abstract interpretation (continued)
+#### Week 13 (Apr 19) 
 *project presentations*
-#### Week 15 (Apr 26)
+#### Week 14 (Apr 26)
 *project presentations*
 
 
