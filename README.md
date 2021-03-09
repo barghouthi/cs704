@@ -83,6 +83,16 @@ The following will be populated as the course progresses:
 
 
 #### Week 7 (Mar 8) Logic & SAT/SMT
+
+* **Tue** Propositional logic and SAT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
+  
+  
+* **Thu** First-order logic and SMT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture6-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture7-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture10-6up.pdf)
+
+*For more references, consult Bradley and Manna's book [CofC]—see references below*
+
 #### Week 8 (Mar 15) Transition systems & program encodings 
 #### Week 9 (Mar 22) Automated verification 
 #### Week 10 (Mar 29) Automated verification continued
