@@ -97,7 +97,13 @@ The following will be populated as the course progresses:
 * **Thu** Bounded encodings
   * [notes](notes/transRelEnc.pdf)
   
-#### Week 9 (Mar 22) Automated verification 
+#### Week 9 (Mar 22) Automated verification
+* **Tue** Bounded encodings and Z3 solver
+  * [notes](notes/transRelEnc.pdf) (same as last time)
+  * [colab](https://colab.research.google.com/drive/167le8cV6YRyLQgDDECT3tbCd48pXJfmw?usp=sharing)
+
+* **Thu** Invariant generation
+ 
 #### Week 10 (Mar 29) Automated verification continued
 #### Week 11 (Apr 5) Applications of abstract interpretation
 #### Week 12 (Apr 12) Applications of abstract interpretation (continued)
