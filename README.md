@@ -102,7 +102,8 @@ The following will be populated as the course progresses:
   * [notes](notes/transRelEnc.pdf) (same as last time)
   * [colab](https://colab.research.google.com/drive/167le8cV6YRyLQgDDECT3tbCd48pXJfmw?usp=sharing)
 
-* **Thu** Invariant generation
+* **Thu** Invariant generation with Horn clauses
+  * [notes](notes/hornClauses.pdf)
  
 #### Week 10 (Mar 29) Automated verification continued
 #### Week 11 (Apr 5) Applications of abstract interpretation
