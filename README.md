@@ -106,6 +106,10 @@ The following will be populated as the course progresses:
   * [notes](notes/hornClauses.pdf)
  
 #### Week 10 (Mar 29) Automated verification continued
+* **Tue** Invariant generation with predicate abstraction
+ * [notes](notes/hornClauses.pdf) (same as last time)
+ * [colab](https://colab.research.google.com/drive/1qHqbHdkZj-hc7GIAAsAOD6Aw9FgKQxVd?usp=sharing)
+
 #### Week 11 (Apr 5) Applications of abstract interpretation
 #### Week 12 (Apr 12) Applications of abstract interpretation (continued)
 #### Week 13 (Apr 19) 
