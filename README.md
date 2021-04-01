@@ -94,8 +94,22 @@ The following will be populated as the course progresses:
 *For more references, consult Bradley and Manna's book [CofC]—see references below*
 
 #### Week 8 (Mar 15) Transition systems & program encodings 
-#### Week 9 (Mar 22) Automated verification 
+* **Thu** Bounded encodings
+  * [notes](notes/transRelEnc.pdf)
+  
+#### Week 9 (Mar 22) Automated verification
+* **Tue** Bounded encodings and Z3 solver
+  * [notes](notes/transRelEnc.pdf) (same as last time)
+  * [colab](https://colab.research.google.com/drive/167le8cV6YRyLQgDDECT3tbCd48pXJfmw?usp=sharing)
+
+* **Thu** Invariant generation with Horn clauses
+  * [notes](notes/hornClauses.pdf)
+ 
 #### Week 10 (Mar 29) Automated verification continued
+* **Tue** Invariant generation with predicate abstraction
+  * [notes](notes/hornClauses.pdf) (same as last time)
+  * [colab](https://colab.research.google.com/drive/1qHqbHdkZj-hc7GIAAsAOD6Aw9FgKQxVd?usp=sharing)
+
 #### Week 11 (Apr 5) Applications of abstract interpretation
 #### Week 12 (Apr 12) Applications of abstract interpretation (continued)
 #### Week 13 (Apr 19) 
@@ -111,7 +125,7 @@ Assignments will be posted here:
 | - | - |
 | [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
 | [asn2](asn/asn2.pdf)  | Mar 12 |
-| [asn3]()  | Mar 22 |
+| [asn3](asn/asn3.pdf)  | Mar 31 |
 | [asn4]()  | Apr 17 |
 
 
@@ -143,7 +157,7 @@ Complete the following sentence: "The experiments were designed to shed light on
 Then explain what you plan to measure; how you will measure it (if it is not obvious); and where you will obtain test cases.
 List the tasks, broken down into two or three milestones
 
-* 5%: **Deliverable 3 (Apr 1)** Submit a description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
+* 5%: **Deliverable 3 (Apr 9)** Submit a description of progress, implementation plan with completed steps checked off, and experimentation plan. Please turn in an updated proposal (with changes marked with changebars, and your new material added as "Appendix B: Progress Report".
 
 * 10%: **Deliverable 4 (last 2 weeks of class)** 10-15 minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
