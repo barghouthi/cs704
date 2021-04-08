@@ -110,8 +110,23 @@ The following will be populated as the course progresses:
   * [notes](notes/hornClauses.pdf) (same as last time)
   * [colab](https://colab.research.google.com/drive/1qHqbHdkZj-hc7GIAAsAOD6Aw9FgKQxVd?usp=sharing)
 
+* **Thu** Lattice theory
+  * SPA ch. 4
+
 #### Week 11 (Apr 5) Applications of abstract interpretation
+* **Tue** Lattice theory
+  * SPA ch. 4
+ 
+* **Thu** Abstract interpretation of programs
+  * SPA ch. 10
+
 #### Week 12 (Apr 12) Applications of abstract interpretation (continued)
+* **Tue** Abstract interpretation of programs
+  * SPA ch. 10
+
+* **Thu** Numerical domains
+  * TBD
+  
 #### Week 13 (Apr 19) 
 *project presentations*
 #### Week 14 (Apr 26)
