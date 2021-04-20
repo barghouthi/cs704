@@ -131,7 +131,7 @@ The following will be populated as the course progresses:
 * **Tue** Termination
   * [Marktoberdorf notes](https://www.cs.tufts.edu/comp/150BUGS/terminator-principles.pdf)
 
-** Thue** *project presentations*
+* **Thue** *project presentations*
 #### Week 14 (Apr 26)
 *project presentations*
 
