@@ -125,9 +125,11 @@ The following will be populated as the course progresses:
   * SPA ch. 10
 
 * **Thu** Numerical domains
-  * TBD
+  * SPA ch. 6
   
 #### Week 13 (Apr 19) 
+* **Tue** Termination
+  * [Marktoberdorf notes](https://www.cs.tufts.edu/comp/150BUGS/terminator-principles.pdf)
 *project presentations*
 #### Week 14 (Apr 26)
 *project presentations*
