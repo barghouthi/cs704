@@ -12,59 +12,238 @@
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 
+\newcommand{\lang}{\mathcal{L}}
 \title{Assignment 4}
 
 \begin{document}
 \maketitle
 
-\section*{$k$-induction}
-In class and notes,\footnote{\url{https://github.com/barghouthi/cs704/blob/master/notes/transRelEnc.pdf}}
- we discussed $k$-induction as a technique
-for proving validity of a Hoare triple.
-You are to implement the $k$-induction algorithm
-using the Z3 SMT solver.
+\section{Interpolants}
+
+This question concerns the logical notion
+of \emph{Craig interpolants}.
+You do not require prior knowledge about interpolation
+to answer this question.
+
+Given two formulas $A$ and $B$ in first-order logic,
+such that $A \land B$ is unsatisfiable,
+there exists a formula $I$, called an interpolant, such that
+\begin{enumerate}
+    \item $A \Rightarrow I$ is valid (recall that a formula $\phi$ is valid iff all models satisfy it)
+    \item $I \land B$ is unsatisfiable;
+    \item $\emph{vars}(I) \subseteq \emph{vars}(A) \cap \emph{vars}(B)$,
+        where $\emph{vars}(\phi)$ is the set of all variables
+        that appear in $\phi$.
+\end{enumerate}
+
+As an example, consider the following formulas
+in propositional logic (i.e., all variables are Boolean):
+%
+$$A \triangleq a \land b$$
+$$B \triangleq \neg b \land c$$
+%
+We know that $A \land B$ is unsatisfiable.
+An interpolant $I$ here is $b$. Observe that
+$A \Rightarrow I$ is valid, $I \land  B$ is unsatisfiable,
+and $I$ only contains variables that appear in $A$ and $B$.
 
 
-Your implementation should take a Hoare triple:
-$$\{\phi\}\ \texttt{while } b \texttt{ do } P_\emph{body}\  \{\psi\}$$
-Given a value $k \geq 1$,
-your implementation should perform
-$k$-induction, returning ``success'' if
-$k$-induction succeeds, and ``failure'' otherwise.
+\subsection{}
+An alternative definition of an interpolant
+is as follows:
 
-\emph{Your implementation can take the program
-as two formulas}, $b$ and $\texttt{enc}(P_{\emph{body}})$.
-So you do not have to parse the program and encode automatically
-for this assignment.
+Suppose we have two formulas $A$ and $C$
+such that $A \Rightarrow C$ is valid, then
+there exists a formula $I$ such that
+\begin{enumerate}
+    \item $A \Rightarrow I$ is valid;
+    \item $I \Rightarrow C$ is valid;
+    \item $\emph{vars}(I) \subseteq \emph{vars}(A) \cap \emph{vars}(C)$.
+\end{enumerate}
 
-\begin{itemize}
-  \item It is highly recommend that you use the Python
-  API of the Z3 SMT solver (\url{github.com/Z3Prover/z3}).
-  Z3 has other language bindings, but Python is the easiest
-  to prototype with and will make you most productive.
+Prove that the two definitions of an interpolant are equivalent.
 
-\item You are expected to \textbf{exhaustively comment your
-code} and describe what parts of $k$-induction you are implementing.
+\subsection{}
+Give two formulas $A$ and $B$ such that $A\land B$ is unsatisfiable,
+does there always exist a unique interpolant (up to logical equivalence)?
+If not, provide an example of two formulas $A$ and $B$ and
+two interpolants $I_1$ and $I_2$,
+such that $I_1 \neq I_2$.
 
-\item You should encode three non-trivial Hoare triples.
-All examples you provide should be valid Hoare triples.
-One of the Hoare triples should require $k\geq2$
-for the induction to succeed.
-Explain the programs you provide.
-For the example where $k\geq 2$ is required, explain why
-$k=1$ is insufficient.
-It is OK for your examples to be hard-coded.
 
-\item Provide a valid Hoare triple
-for which $k$-induction cannot prove correctness
-for any value of $k$. Argue why that is the case.
+\subsection{}
+Suppose you are working with formulas
+in quantifier-free linear integer arithmetic:
+meaning, formulas that are Boolean combinations (conjunctions, disjunctions, negations)
+of linear inequalities over integers
+of the form: $a_1x_1 + \ldots a_nx_n \leq c$,
+where $a_i,c$ are integer constants, and $x_i$ are integer
+variables.
 
-\item Note: In the notes, we encoded sequential 
-    composition with an existential quantifier.
-    The quantifiers are not needed when 
-    checking validity, as is done in $k$-induction,
-    so you do not need them.
-\end{itemize}
+Consider the following two formulas in quantifier-free
+linear integer arithmetic:
 
+$$A \triangleq x = 2y$$
+$$B \triangleq x = 2z - 1$$
+
+Is $A \land B$ satisfiable?
+If not, does there exist an interpolant
+for $A$ and $B$ that is also in quantifier-free linear integer arithmetic?
+If no such interpolant exists, explain why that is the case.
+
+
+% \section{Extending Static Analysis to a Probabilistic Setting}
+
+% \newcommand{\prog}{\mathcal{L}}
+% \newcommand{\pprog}{\mathcal{L}^\sim}
+
+% \newcommand{\stat}{\mathcal{A}}
+
+% Let $\prog$ be a very simple programming language
+% where a program $P \in \prog$ is comprised of assignment,
+% conditional, and while-loop statements.
+% Assume also that all variables are either Boolean or real-valued,
+% and that all programs of interest are well-typed and exhibit
+% no runtime errors (e.g., divisions by zero).
+
+% For a program $P$, we assume it has  a set of input variables $V_i$
+% and a set of output variables $V_r$.
+% For the rest of this question, imagine that we have at our
+% disposal an almighty static analyzer $\stat$ that, given $P \in \prog$,
+% returns a set $S$ of all states reachable by executing $P$ from
+% any possible input.
+% A state $s \in S$ is considered to be a map from every variable
+% in $P$ to a value.
+% Given variable $x$, we use $s[x]$ to denote the value of $x$
+% in $s$.
+
+% \paragraph{Example 1}
+% For illustration, consider the following example:
+% %
+% \begin{verbatim}
+% def p(x)
+%   y = x + 1
+%   return y
+% \end{verbatim}
+% %
+% Given the above program, the static analyzer returns
+% the set
+% $$\{s \mid s[x] = c, s[y] = c + 1, c \in \mathbb{R}\}$$
+% In other words, it returns the set of all states $s$ where $y = x + 1$.
+
+% \paragraph{Example 2}
+% We also assume that our language $\lang$ allows non-deterministic
+% choice, which is denoted by \texttt{if (*) ... else ...},
+% where the program can non-deterministically execute either branch of the
+% conditional statement.
+% Consider, for example, the following simple program:
+% \begin{verbatim}
+% def p()
+%   if (*)
+%     y = 1
+%   else
+%     y = 2
+%   return y
+% \end{verbatim}
+% Given the above program, the static analyzer returns the set
+% $$\{ s \mid s[y] \in \{1,2\}\}$$
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Using $\stat$ for probabilistic reasoning}
+% \label{sec:proba}
+
+% Suppose that we decide to extend our language
+% $\prog$ into a new language $\pprog$ with random assignments of the form
+% \begin{verbatim}
+%   x ~ bern(c)
+% \end{verbatim}
+% where Boolean variable \texttt{x} is assigned true with probability \texttt{c}
+% and false with probability \texttt{1-c}, where $\texttt{c}$ is a constant in $ [0,1]$.
+% (\texttt{bern} stands for a Bernoulli distribution.)
+
+% Given a program $P \in \pprog$, we are typically
+% interested in the probability of the program returning
+% a specific set of values.
+% For example, consider the following probabilistic program:
+% \begin{verbatim}
+% def p()
+%   x ~ bern(0.5)
+%   y ~ bern(0.5)
+%   z =  x && y
+%   return z
+% \end{verbatim}
+% The probability that \texttt{p} returns true
+% is 0.25, as both \texttt{x} and \texttt{y} have to be true.
+
+% Your task in this question is as follows:
+% Given a program $P \in \pprog$ and the static
+% analyzer $\stat$, you are to use $\stat$
+% to compute the probability that $P$ returns
+% a value in some set $X$.
+% Note that $\stat$ only accepts programs in $\prog$,
+% so you have to somehow transform $P \in \pprog$ into a new
+% program in $\prog$
+% in order to be able to use $\stat$.
+% Once you have the output set $S$ of $\stat$,
+% you may apply any mathematical  operation on $S$ to
+% extract your desired result.
+
+% You should assume that $P$ is always terminating,
+% has no non-deterministic conditionals,
+% has no input variables (like the above example),
+% and only manipulates Boolean variables.
+% \textbf{Hint:} your transformation of $P$
+% may introduce non-determinism, real-valued variables,
+% and lists.
+
+% \subsection{Discovering maximizing inputs}
+% In the first part of the question,
+% we assumed that $P$ has no input variables.
+% In this part, we will assume that $P$ has input variables.
+% Our goal is to find a value for the input variables
+% that maximizes the probability of returning some output value.
+% Consider the following example:
+% \begin{verbatim}
+% def p(x)
+%   if (x)
+%     y ~ bern(0.5)
+%   else
+%     y ~ bern(0.9)
+%   return y
+% \end{verbatim}
+% Suppose we want to maximize the probability
+% that \texttt{p} returns the value true.
+% To do so, we have to set the input variable \texttt{x}
+% to false in order to force the program down the
+% else branch of \texttt{p}, which has a higher
+% probability of setting \texttt{y} to true.
+
+% Describe how you would extend your
+% technique from Part~\ref{sec:proba} to this setting.
+
+\section{Galois connections}
+Consider these two definitions of Galois connections:
+
+\paragraph{Definition 1:}
+$(L,\alpha,\gamma,M)$ is a Galois connection
+between the complete lattices $(L,\sqsubseteq)$
+and $(M,\sqsubseteq)$ if and only if
+$\alpha:L \rightarrow M$ and $\gamma:M \rightarrow L$
+are monotone functions that satisfy the following conditions:
+$$\textrm{forall } l \in L \ldotp \gamma(\alpha(l)) \sqsupseteq l$$
+$$\textrm{forall } m \in M \ldotp \alpha(\gamma(m)) \sqsubseteq m$$
+
+
+\paragraph{Definition 2:}
+$(L,\alpha,\gamma,M)$ is a Galois connection
+between the complete lattices $(L,\sqsubseteq)$
+and $(M,\sqsubseteq)$ if and only if
+$\alpha:L \rightarrow M$ and $\gamma:M \rightarrow L$
+are total functions such that for all $l\in L, m \in M$,
+$$\alpha(l) \sqsubseteq m \Leftrightarrow l \sqsubseteq \gamma (m)$$
+
+~\\
+Prove that the two definitions are equivalent.
 
 \end{document}
