@@ -1,10 +1,10 @@
 #  Principles of Programming Languages
-## CS 704 | Spring 2021
+## CS 704 | Spring 2022
 
 | τ | τ' |
 |-|-|
 |When | Tu/Th 1-2:15 |
-|Where | Online (Zoom via Canvas) |
+|Where | CS 1263 |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
 |Office hours | Thu 215-300 in CS 6363 |
 
@@ -22,7 +22,7 @@ The goal is to expose students to a range of mathematical and practical tools fo
 ## Lectures
 The following will be populated as the course progresses:
 
-#### Week 1 (Jan 25) Lambda calculus
+#### Week 1 (Jan 24) Lambda calculus
 
 * **Tue** Welcome to the course / Intro to the beautiful lambda calculus
   * [notes](notes/cs704-lec-1-22-2010.pdf)
@@ -34,7 +34,7 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec02.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec03.pdf)*
 
-#### Week 2 (Feb 1) Programming constructs & fixpoints in lambda calculus
+#### Week 2 (Jan 3) Programming constructs & fixpoints in lambda calculus
 * **Tue** Programming constructs in lambda calclus
   * [notes](notes/cs704-lec-01-29-2010.pdf)
   * Ch. 5 of TAPL 
@@ -42,98 +42,6 @@ The following will be populated as the course progresses:
 * **Thu**  OCaml tutorial
 
 [*Asn 1 out*](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)
-
-#### Week 3 (Feb 8) Fixpoints and project ideas
-* **Tue**  Fixpoints in lambda calculus
-  * [notes](notes/cs704-lec-01-29-2010.pdf) (same as Tue)
-  * [code from class](code/fixpoint_combinators.py)
-  *   <a href="http://matt.might.net/articles/implementation-of-recursive-fixed-point-y-combinator-in-javascript-for-memoization/"> Matt Might's blog: Y combinator in JS</a>
-        (See Might's other lambda calculus posts too.)
-  * See [this nice blog post on deriving the Y combinator](https://invenia.github.io/blog/2018/08/20/ycombinator/)
- 
-* **Thu** Project ideas individual meetings
-        
-#### Week 4 (Feb 15) Types
-* **Tue** Introduction to types
-  * Ch. 8 of TAPL
-  
-* **Thu** Simply typed lambda calculus	
-  * Ch. 9 of TAPL
-
-*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
-
-#### Week 5 (Feb 22) Types continued
-* **Tue** Type inference
-  * Ch. 22 of TAPL
-  
-* **Thu** Types for an imperative language
-  * Ch. 3 of SPA (Ch. 2 has language definition)
-  
-*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
-
-#### Week 6 (Feb 29) Semantics
-* **Tue** Operational semantics
-  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
-  
-  
-* **Thu** Axiomatic semantics
-  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
-
-*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/), which is freely available*
-
-
-#### Week 7 (Mar 8) Logic & SAT/SMT
-
-* **Tue** Propositional logic and SAT solvers
-  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
-  
-  
-* **Thu** First-order logic and SMT solvers
-  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture6-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture7-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture10-6up.pdf)
-
-*For more references, consult Bradley and Manna's book [CofC]—see references below*
-
-#### Week 8 (Mar 15) Transition systems & program encodings 
-* **Thu** Bounded encodings
-  * [notes](notes/transRelEnc.pdf)
-  
-#### Week 9 (Mar 22) Automated verification
-* **Tue** Bounded encodings and Z3 solver
-  * [notes](notes/transRelEnc.pdf) (same as last time)
-  * [colab](https://colab.research.google.com/drive/167le8cV6YRyLQgDDECT3tbCd48pXJfmw?usp=sharing)
-
-* **Thu** Invariant generation with Horn clauses
-  * [notes](notes/hornClauses.pdf)
- 
-#### Week 10 (Mar 29) Automated verification continued
-* **Tue** Invariant generation with predicate abstraction
-  * [notes](notes/hornClauses.pdf) (same as last time)
-  * [colab](https://colab.research.google.com/drive/1qHqbHdkZj-hc7GIAAsAOD6Aw9FgKQxVd?usp=sharing)
-
-* **Thu** Lattice theory
-  * SPA ch. 4
-
-#### Week 11 (Apr 5) Applications of abstract interpretation
-* **Tue** Lattice theory
-  * SPA ch. 4
- 
-* **Thu** Abstract interpretation of programs
-  * SPA ch. 10
-
-#### Week 12 (Apr 12) Applications of abstract interpretation (continued)
-* **Tue** Abstract interpretation of programs
-  * SPA ch. 10
-
-* **Thu** Numerical domains
-  * SPA ch. 6
-  
-#### Week 13 (Apr 19) 
-* **Tue** Termination
-  * [Marktoberdorf notes](https://www.cs.tufts.edu/comp/150BUGS/terminator-principles.pdf)
-
-* **Thue** *project presentations*
-#### Week 14 (Apr 26)
-*project presentations*
 
 
 ## Assignments
