@@ -79,7 +79,7 @@ Performance will be evaluated as follows:
 ## Course Project
 For the final project, you can work on a problem of your choice with a partner or by yourself.
 
-* **Deliverable 1 (Feb 7)**   Send me a list of three project ideas.
+* **Deliverable 1 (Feb 14)**   Send me a list of three project ideas.
 
 * 5%: **Deliverable 2 (Feb 20)**  Submit a 2-3 page proposal including the following:
 The statement of the problem to be investigated
