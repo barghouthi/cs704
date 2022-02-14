@@ -54,6 +54,15 @@ The following will be populated as the course progresses:
 * **Tue** Introduction to types
   * Ch. 8 of TAPL
 
+#### Week 4 (Feb 15) Types
+* **Tue** Simply typed lambda calculus	
+  * Ch. 9 of TAPL
+  
+* **Thu** Project meetings
+
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
+
+
 ## Assignments
 Assignments will be posted here:
 
