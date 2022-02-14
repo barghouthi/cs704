@@ -6,7 +6,7 @@
 |When | Tu/Th 1-2:15 |
 |Where | CS 1263 |
 |Who | [Aws Albarghouthi](http://www.cs.wisc.edu/~aws) |
-|Office hours | Thu 215-300 in CS 6363 |
+|Office hours | Tue ~Thu~ 215-300 in CS 6363 |
 
 All notes and assignments wil be posted on this website. 
 
@@ -53,6 +53,25 @@ The following will be populated as the course progresses:
 
 * **Tue** Introduction to types
   * Ch. 8 of TAPL
+
+#### Week 4 (Feb 14) Types
+* **Tue** Simply typed lambda calculus	
+  * Ch. 9 of TAPL
+  
+* **Thu** Project meetings
+
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec19.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec20.pdf)*
+
+#### Week 5 (Feb 21) Types continued
+* **Tue** Type inference
+  * Ch. 22 of TAPL
+  
+* **Thu** Types for an imperative language
+  * Ch. 3 of SPA (Ch. 2 has language definition)
+  
+*you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
+
+
 
 ## Assignments
 Assignments will be posted here:
