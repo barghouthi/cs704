@@ -71,7 +71,68 @@ The following will be populated as the course progresses:
   
 *you might also find helpful the notes from Sampson's Cornell class—[this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec23.pdf) and [this](http://www.cs.cornell.edu/courses/cs6110/2017sp/lectures/lec24.pdf)*
 
+#### Week 6 (Feb 28) Semantics
+* **Tue** Operational semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-2a-natural.pdf)
+  
+  
+* **Thu** Axiomatic semantics
+  * The class presentation is based on Nielsen and Nielsen's book [Sem] -- see their comprehensive slides [here](http://www.imm.dtu.dk/~hrni/SWA/SwA_presentations/SwA-9-axiomatic.pdf)
 
+*you might also find helpful Chs 7 (operational semantics) and 12 (axiomatic semantics) of [Chlipala's FRAP book](http://adam.chlipala.net/frap/), which is freely available*
+
+#### Week 7 (Mar 7) Logic & SAT/SMT
+
+* **Tue** Propositional logic and SAT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture1-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture2-6up.pdf)
+  
+  
+* **Thu** First-order logic and SMT solvers
+  * The class presentation will follow Dillig's slides: [here](http://www.cs.utexas.edu/~isil/cs389L/lecture6-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture7-6up.pdf) and [here](http://www.cs.utexas.edu/~isil/cs389L/lecture10-6up.pdf)
+
+*For more references, consult Bradley and Manna's book [CofC]—see references below*
+
+#### Week 8 (Mar 21) Transition systems & program encodings 
+* **Thu** Bounded encodings
+  * [notes](notes/transRelEnc.pdf)
+  
+#### Week 9 (Mar 28) Automated verification
+* **Tue** Bounded encodings and Z3 solver
+  * [notes](notes/transRelEnc.pdf) (same as last time)
+  * [colab](https://colab.research.google.com/drive/167le8cV6YRyLQgDDECT3tbCd48pXJfmw?usp=sharing)
+
+* **Thu** Invariant generation with Horn clauses
+  * [notes](notes/hornClauses.pdf)
+ 
+#### Week 10 (Apr 4) Automated verification continued
+* **Tue** Invariant generation with predicate abstraction
+  * [notes](notes/hornClauses.pdf) (same as last time)
+  * [colab](https://colab.research.google.com/drive/1qHqbHdkZj-hc7GIAAsAOD6Aw9FgKQxVd?usp=sharing)
+
+* **Thu** Lattice theory
+  * SPA ch. 4
+
+#### Week 11 (Apr 11) Applications of abstract interpretation
+* **Tue** Lattice theory
+  * SPA ch. 4
+ 
+* **Thu** Abstract interpretation of programs
+  * SPA ch. 10
+
+#### Week 12 (Apr 18) Applications of abstract interpretation (continued)
+* **Tue** Abstract interpretation of programs
+  * SPA ch. 10
+
+* **Thu** Numerical domains
+  * SPA ch. 6
+  
+#### Week 13 (Apr 25) 
+* **Tue** Termination
+  * [Marktoberdorf notes](https://www.cs.tufts.edu/comp/150BUGS/terminator-principles.pdf)
+
+* **Thue** *project presentations*
+#### Week 14 (May 2)
+*project presentations*
 
 ## Assignments
 Assignments will be posted here:
