@@ -93,7 +93,7 @@ The following will be populated as the course progresses:
 *For more references, consult Bradley and Manna's book [CofC]—see references below*
 
 #### Week 8 (Mar 21) Transition systems & program encodings 
-* **Thu** Bounded encodings
+* **Tue** Bounded encodings
   * [notes](notes/transRelEnc.pdf)
   
 #### Week 9 (Mar 28) Automated verification
