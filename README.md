@@ -99,7 +99,7 @@ The following will be populated as the course progresses:
 #### Week 9 (Mar 28) Automated verification
 * **Tue** Bounded encodings and Z3 solver
   * [notes](notes/transRelEnc.pdf) (same as last time)
-  * [colab](https://colab.research.google.com/drive/167le8cV6YRyLQgDDECT3tbCd48pXJfmw?usp=sharing)
+  * [colab](https://colab.research.google.com/drive/1ZCzVuJk4nfKYzM0L8lalmXOYdpBk2vCg?usp=sharing)
 
 * **Thu** Invariant generation with Horn clauses
   * [notes](notes/hornClauses.pdf)
