@@ -177,7 +177,7 @@ List the tasks, broken down into two or three milestones
 
 * 10%: **Deliverable 4 (last 2 weeks of class)** 10-15 minute oral presentations (plus 5 minutes for questions/discussion) will be given during class. You will need to e-mail me an abstract (in plaintext) giving the title, project participants, and a two-paragraph to three-paragraph summary of what will be presented.
 
-* 35%: **Deliverable 5 (May 7)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 15-20 pages of [Single-colum Latex article](http://homepages.math.uic.edu/~bshipley/sample.short.tex). 
+* 35%: **Deliverable 5 (May 7)** Final writeup: The final writeup should be modeled after a typical conference paper. There is no length requirement or limit, but I would expect it to be somewhere around 10-15 pages of [Single-colum Latex article](http://homepages.math.uic.edu/~bshipley/sample.short.tex). 
 
 ## Resources
 There are no required textbooks for this class. The following is a list of books that should be  useful references for different parts of the course.
