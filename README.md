@@ -142,7 +142,7 @@ Assignments will be posted here:
 | [asn1](http://pages.cs.wisc.edu/~aws/courses/cs704-asn/asn1)  | Feb 15 |
 | [asn2](asn/asn2.pdf)  | Mar 14 |
 | [asn3](asn/asn3.pdf)  | April 15 |
-<!-- | [asn4](asn/asn4.pdf)  | Apr 30 | -->
+| [asn4](asn/asn4.pdf)  | Apr 30 |
 
 
 ## Evaluation
