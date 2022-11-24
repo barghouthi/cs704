@@ -117,11 +117,11 @@ The following will be populated as the course progresses:
   * SPA ch. 4
  
 * **Thu** Abstract interpretation of programs
-  * SPA ch. 10
+  * SPA ch. 12
 
 #### Week 12 (Apr 18) Applications of abstract interpretation (continued)
 * **Tue** Abstract interpretation of programs
-  * SPA ch. 10
+  * SPA ch. 12
 
 * **Thu** Numerical domains
   * SPA ch. 6
